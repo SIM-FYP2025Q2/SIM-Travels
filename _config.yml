@@ -1,0 +1,7 @@
+title: FYP-25-S2-33 | Customer Service Chatbot
+tagline: AI Customer Service Chatbot integrated with Zendesk
+description: This repository contains the customer service chatbot developed as part of our Final Year Project (CSIT321). It features an AI-powered chatbot for customer support, designed to provide real-time assistance by answering inquiries and resolving common issues.
+show_downloads: true
+remote_theme: pages-themes/midnight@v0.2.0
+plugins:
+- jekyll-remote-theme
