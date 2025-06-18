@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "originLocationCode": "KUL",
+            "destinationLocationCode": "SIN",
+            "adults": "1",
+            "currencyCode": "SGD"
+        },
+        {
+            "originLocationCode": "SIN",
+            "destinationLocationCode": "KUL",
+            "adults": "1",
+            "currencyCode": "SGD"
+        },
+        {
+            "originLocationCode": "KUL",
+            "destinationLocationCode": "XSP",
+            "adults": "1",
+            "currencyCode": "SGD"
+        },
+        {
+            "originLocationCode": "XSP",
+            "destinationLocationCode": "KUL",
+            "adults": "1",
+            "currencyCode": "SGD"
+        },
+        {
+            "originLocationCode": "JHB",
+            "destinationLocationCode": "SIN",
+            "adults": "1",
+            "currencyCode": "SGD"
+        },
+        {
+            "originLocationCode": "SIN",
+            "destinationLocationCode": "JHB",
+            "adults": "1",
+            "currencyCode": "SGD"
+        }
+    ]
+}
