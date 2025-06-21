@@ -67,5 +67,39 @@ INSERT INTO `FAQ` (`question`, `answer`, `link`, `category_id`) VALUES
 ('What payment methods are accepted?',
  'We accept credit/debit cards, PayPal, and selected e-wallets like GrabPay.',
  'https://example.com/faq/billing-support',
- 2);
+ 2),
 
+('How do I delete my account?',
+ 'To delete your account, go to account settings and click on "Delete Account". Follow the confirmation steps.',
+ 'https://example.com/account/delete',
+ 1),
+
+('How can I view my past billing statements?',
+ 'Log in to your account and navigate to "Billing History" under Billing settings.',
+ 'https://example.com/billing/history',
+ 2),
+
+('Why is my app not loading?',
+ 'Please try clearing your cache or reinstalling the app. Ensure you have a stable internet connection.',
+ 'https://example.com/support/app-loading-issues',
+ 3),
+
+('What is your customer support operating hours?',
+ 'Our support team is available 24/7 via live chat and email.',
+ 'https://example.com/contact',
+ 5),
+
+('What should I do if I was charged twice?',
+ 'Please contact billing support with your invoice number and we will refund the duplicate charge.',
+ 'https://example.com/billing/dispute',
+ 2),
+
+ ('Do you offer support in languages other than English?',
+ 'Yes, we offer multilingual support for key languages including Bahasa, Chinese, and Spanish.',
+ 'https://example.com/help/multilingual-support',
+ 5),
+
+ ('Can I change the email linked to my account?',
+ 'Yes. Go to Account Settings > Email and follow the verification process after updating.',
+ 'https://example.com/account/email-change',
+ 1);

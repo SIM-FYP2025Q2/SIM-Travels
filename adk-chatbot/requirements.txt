@@ -1,0 +1,6 @@
+dotenv
+uv
+google-adk
+google-adk[eval]
+google-cloud-aiplatform
+pinecone

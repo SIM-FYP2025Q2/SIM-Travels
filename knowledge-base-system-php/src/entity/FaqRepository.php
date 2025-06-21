@@ -179,6 +179,7 @@ class FaqRepository
                         `answer` = :answer,
                         `category_id` = :category_id,
                         `link` = :link
+                        `is_synced` = 0
                     WHERE `id` = :id";
 
             // Bind Paramaters

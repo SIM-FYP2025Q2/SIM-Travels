@@ -34,11 +34,7 @@ function submitForm() {
 
     if (isValid) {
         if (confirm("Confirm Create FAQ Entry?")) {
-          // form.submit();
-          console.log(q);
-          console.log(a);
-          console.log(document.getElementById('category_id').value)
-          console.log(document.getElementById('link').value)
+          form.submit();
         }
     }
 }

@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
 
     // Instantiate Controller
     $createController = new CreateFaqController();
-    $status = $createController->createFaq($id, $question, $answer, $category_id, $link);
+    $status = $createController->createFaq($question, $answer, $category_id, $link);
 
     // Parse Success/Fail Response
     if ($status) {
@@ -43,9 +43,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
         header("Location: ../view/create.php?status=0");
         exit();
     }
-
-    // Send Response as JSON
-    header('Content-Type: application/json');
-    echo json_encode($response);
-    exit();
 }

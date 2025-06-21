@@ -2,7 +2,7 @@
 
 require_once("/var/www/html/entity/FaqRepository.php");
 
-class UpdateFaqController
+class DeleteFaqController
 {
     private $faq;
 
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
     $id = (int) $_POST['id'];
 
     // Instantiate Controller
-    $deleteController = new UpdateFaqController();
+    $deleteController = new DeleteFaqController();
     $status = $deleteController->deleteFaq($id);
 
     // Parse Success/Fail Response
