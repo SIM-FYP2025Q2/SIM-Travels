@@ -4,13 +4,23 @@ require("/var/www/html/vendor/autoload.php");
 
 require_once("Database.php");
 require_once("FaqRepository.php");
+require_once("PineconeConn.php");
 
 use Google\Auth\Credentials\ServiceAccountCredentials;
-use \Probots\Pinecone\Client as Pinecone;
 
-
+/**
+ * Class VectorRepository
+ *
+ * Handles the generation of vector embeddings from Google Cloud's AI Platform
+ * and upserting them into a Pinecone vector database. It bridges the gap
+ * between the application's relational database and the vector database for AI-powered search.
+ */
 class VectorRepository
 {
+    /**
+     * Authenticates with Google Cloud to obtain an access token.
+     * @return ?string The access token on success, or null on failure.
+     */
     private static function gcloud_auth(): ?string
     {
 
@@ -25,6 +35,15 @@ class VectorRepository
         return $tokenArray['access_token'] ?? null;
     }
 
+    /**
+     * Generates vector embeddings for a given question using Google's text-embedding model.
+     *
+     * Authenticates with Google Cloud, then sends a POST request to the
+     * AI Platform API prediction endpoint with the question text. It returns the
+     * resulting embedding values.
+     * @param string $question The question text to be converted into a vector.
+     * @return array An array of floating-point numbers representing the vector embedding, or an empty array on failure.
+     */
     private static function generateVectors(string $question): array
     {
         $token = self::gcloud_auth();
@@ -65,7 +84,7 @@ class VectorRepository
                             "/locations/us-central1/publishers/google" .
                             "/models/text-embedding-005:predict"
         ]);
-        
+
 
         // POST Request
         $response = curl_exec($ch);
@@ -86,16 +105,29 @@ class VectorRepository
         }
     }
 
+    /**
+     * Upserts unsynced FAQ records into the Pinecone vector database.
+     *
+     * Fetches records from the MySQL DB that are marked as not synced.
+     * For each record, it generates a vector embedding for the question and then
+     * upserts the vector along with its metadata (question, answer, category, link)
+     * into Pinecone. If the upsert is successful, it updates the record's sync status
+     * in the local database. A 2-second sleep is included between each upsert to avoid
+     * rate-limiting issues.
+     * @return bool Returns true if all records were synced successfully, false if any operation failed.
+     */
     public function upsertVectors(): bool
     {
-        $upsertStatus = true;
-        $api_key = getenv("PINECONE_API_KEY");
-        $index = getenv("PINECONE_INDEX_HOST");
-        $pinecone = new Pinecone($api_key, $index);
-        
+        $upsertStatus = true; // Default Return Flag
+
+        // Connect to Pinecone
+        $pinecone = PineconeConn::getConnection();
+
+        // Fetch Unsynced Records
         $faqRepo = new FaqRepository();
         $unsyncedData = $faqRepo->fetchUnsyncedRecords();
 
+        // No Records to Sync
         if (empty($unsyncedData)) {
             return $upsertStatus;
         }
@@ -104,13 +136,13 @@ class VectorRepository
 
             // Generate Vector Embeddings
             $vectorArr = self::generateVectors($data['question']);
-            
+
             // Do not upsert if vector array is empty
             if (empty($vectorArr)) {
                 $upsertStatus = false;
                 continue;
             }
-            
+
             // Upsert Vectors (with/without Link Metadata)
             if (is_null($data['link'])) {
                 $response = $pinecone->data()->vectors()->upsert(vectors: [
@@ -122,7 +154,7 @@ class VectorRepository
                         'category' => $data['category']
                     ]
                 ]);
-            } else {
+            } else { // With Link Metadata
                 $response = $pinecone->data()->vectors()->upsert(vectors: [
                     'id' => (string) $data['id'],
                     'values' => $vectorArr,
@@ -146,5 +178,32 @@ class VectorRepository
             sleep(2); // Wait before Next Update
         }
         return $upsertStatus;
+    }
+
+    /**
+     * Delete FAQ Record from Pinecone Vector Database, then MySQL Database
+     * @return bool Returns true record deleted successfully, false if any operation failed.
+     */
+    public function deleteVector(int $id, int $is_synced): bool
+    {
+        // FaqRepo Object
+        $faqRepo = new FaqRepository();
+
+        if ($is_synced === 1) {
+            // Connect to Pinecone
+            $pinecone = PineconeConn::getConnection();
+            $response = $pinecone->data()->vectors()->delete(
+                ids: [(string) $id]
+            );
+
+            // Delete from MySQL Database
+            if($response->successful()) {
+                return $faqRepo->deleteFaq($id);;
+            } else {
+                return false;
+            }
+        }
+
+        return $faqRepo->deleteFaq($id);
     }
 }

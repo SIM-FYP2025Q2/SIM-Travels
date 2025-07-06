@@ -1,6 +1,6 @@
 <?php
 
-require_once("/var/www/html/entity/FaqRepository.php");
+require_once("/var/www/html/entity/VectorRepository.php");
 
 class DeleteFaqController
 {
@@ -8,12 +8,12 @@ class DeleteFaqController
 
     public function __construct()
     {
-        $this->faq = new FaqRepository();
+        $this->faq = new VectorRepository();
     }
 
-    public function deleteFaq(int $id): bool
+    public function deleteVector(int $id, int $is_synced): bool
     {
-        return $this->faq->deleteFaq($id);
+        return $this->faq->deleteVector($id, $is_synced);
     }
 }
 
@@ -21,13 +21,17 @@ class DeleteFaqController
  * Script to handle the request of Delete FAQ.
  * Expects a POST request with 'id'
  */
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
+    isset($_POST['id']) &&
+    isset($_POST['is_synced'])
+){
     // Convert String ID to Integer
     $id = (int) $_POST['id'];
+    $is_synced = (int) $_POST['is_synced'];
 
     // Instantiate Controller
     $deleteController = new DeleteFaqController();
-    $status = $deleteController->deleteFaq($id);
+    $status = $deleteController->deleteVector($id, $is_synced);
 
     // Parse Success/Fail Response
     if ($status) {

@@ -73,7 +73,7 @@ $faqCategories = $categoryController->readAllFaqCategories();
       <!-- User Dropdown Menu -->
       <div class="d-flex align-items-center gap-3">
         <div class="dropdown">
-            <button 
+            <button
               class="btn btn-primary d-flex align-items-center gap-2 dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
@@ -91,8 +91,8 @@ $faqCategories = $categoryController->readAllFaqCategories();
   </nav>
 
   <!-- Sync Modal -->
-  <div 
-    class="modal fade" 
+  <div
+    class="modal fade"
     id="syncModal"
     tabindex="-1"
     aria-labelledby="SyncModalLabel"
@@ -211,7 +211,7 @@ $faqCategories = $categoryController->readAllFaqCategories();
       <!-- Create Button -->
       <div class="d-flex gap-2">
           <button
-            class="btn btn-success d-flex align-items-center gap-1" 
+            class="btn btn-success d-flex align-items-center gap-1"
             data-bs-toggle="modal"
             data-bs-target="#syncModal"
             onclick="syncFaq()",
@@ -219,7 +219,7 @@ $faqCategories = $categoryController->readAllFaqCategories();
               <ion-icon name="sync-outline" style="font-size: 1.2rem;"></ion-icon>
               <span>Sync</span>
           </button>
-          <button class="btn btn-primary d-flex align-items-center gap-1" 
+          <button class="btn btn-primary d-flex align-items-center gap-1"
                   id="createBtn"
                   onclick="window.location.href = './create.php'">
               <ion-icon name="add-outline" style="font-size: 1.2rem;"></ion-icon>
@@ -256,7 +256,7 @@ $faqCategories = $categoryController->readAllFaqCategories();
                 ?>
               </td>
               <td class="text-end">
-                <button 
+                <button
                   class="btn btn-outline-info btn-sm mb-1"
                   data-bs-toggle="modal"
                   data-bs-target="#viewFaqModal"
@@ -266,7 +266,7 @@ $faqCategories = $categoryController->readAllFaqCategories();
                       View
                     </span>
                 </button>
-                <button 
+                <button
                   class="btn btn-outline-warning btn-sm mb-1"
                   data-bs-toggle="modal"
                   data-bs-target="#updateFaqModal"
@@ -276,9 +276,9 @@ $faqCategories = $categoryController->readAllFaqCategories();
                       Update
                     </span>
                 </button>
-                <button 
+                <button
                   class="btn btn-outline-danger btn-sm mb-1"
-                  onclick="deleteFaq('<?php echo $f->getId(); ?>')">
+                  onclick="deleteFaq('<?php echo $f->getId(); ?>','<?php echo ($f->is_synced() ? 1 : 0); ?>')">
                     <span class="d-flex align-items-center gap-2">
                       <ion-icon name="trash" style="font-size: 1rem;"></ion-icon>
                       Delete

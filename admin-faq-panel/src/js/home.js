@@ -58,10 +58,10 @@ async function syncFaq() {
 
     if (responseVal.isSuccess) {
         alert('Sync successfully');
-        window.location.reload(true); 
+        window.location.reload(true);
     } else {
         alert('Sync completed with failures/warnings. Please contact an Admin.');
-        window.location.reload(true); 
+        window.location.reload(true);
     }
 }
 
@@ -81,7 +81,7 @@ async function updateFaqForm() {
         alert('Please fill in all fields.');
     } else {
         var form = document.getElementById('updateFaqForm');
-    
+
         // Prepare Form Data
         var data = new FormData();
         data.append('id', faqId);
@@ -100,55 +100,56 @@ async function updateFaqForm() {
                 method: 'POST',
                 body: data,
             });
-            
+
             // Check Response Value
             const responseVal = await response.json();
             if (responseVal.isSuccess) {
                 alert('FAQ updated successfully!');
                 modal.hide()
-                window.location.reload(true); 
+                window.location.reload(true);
             } else {
                 alert('FAQ update failed, please try again later.');
                 modal.hide();
-                window.location.reload(true); 
+                window.location.reload(true);
             }
         } catch (error) {
             console.error("Error during FAQ update:", error);
             alert('FAQ update failed, please try again later.');
             modal.hide();
-            window.location.reload(true); 
+            window.location.reload(true);
         }
     }
 }
 
 // Function to Delete FAQ
-async function deleteFaq(id) {
+async function deleteFaq(id, is_synced) {
     // Confirm Prompt
     if (confirm("Are you sure you want to delete this FAQ?")) {
         try {
             // Prepare Form Data
             var data = new FormData();
             data.append('id', id);
+            data.append('is_synced', is_synced);
 
             // Send DELETE Request
-            const response = await fetch(`../controllers/DeleteFaqController.php`, {
+            const response = await fetch('../controllers/DeleteFaqController.php', {
                 method: 'POST',
                 body: data,
             });
 
             // Check Response Value
             const responseVal = await response.json();
-                if (responseVal.isSuccess) {
+            if (responseVal.isSuccess) {
                 alert('FAQ deleted successfully!');
-                window.location.reload(true); 
+                window.location.reload(true);
             } else {
                 alert('FAQ deletion failed, please try again later.');
-                window.location.reload(true); 
+                window.location.reload(true);
             }
         } catch (error) {
             console.error("Error during FAQ deletion:", error);
-            alert('FAQ deletion failed, please try again later.');
-            window.location.reload(true); 
+            alert('Unknown error occured during FAQ deletion, please try again later.');
+            window.location.reload(true);
         }
     }
 }

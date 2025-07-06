@@ -14,12 +14,12 @@ load_dotenv()
 
 # --- Tools ----
 def rag_search(user_query:str) -> dict:
-    """Embeds texts with Text Embedding Model, then queries Pinecone Index 
+    """Embeds texts with Text Embedding Model, then queries Pinecone Index
 
     Returns:
-        A list of lists containing the embedding vectors for each input text
+        "status" and "responses"
     """
-    
+
     # Specify Embedding Model & Parameters
     model = TextEmbeddingModel.from_pretrained("text-embedding-005")
     kwargs = dict(output_dimensionality=768)
@@ -229,7 +229,7 @@ def airport_transfer_search(
         "airport_transfer_offers": sample_record
     }
 
-# --- Agents ---- 
+# --- Agents ----
 faq_agent=Agent(
     model='gemini-2.0-flash',
     name='faq_agent',

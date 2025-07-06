@@ -24,15 +24,15 @@ CREATE TABLE `FAQ` (
     `question` TEXT NOT NULL,
     `answer` TEXT NOT NULL,
     `category_id` INT NOT NULL,
-    `link` TEXT NULL,
+    `link` TEXT NULL DEFAULT NULL,
     `is_synced` BOOLEAN NOT NULL DEFAULT FALSE,
     FOREIGN KEY (`category_id`) REFERENCES `Category` (`id`)
 );
 
 -- Insert into Users table
 INSERT INTO `Users` (`username`, `email`, `password`, `is_admin`, `is_active`) VALUES
-('admin', 'admin@email.com', '$2y$10$RU7.5wQr.743eFntHokafOCtSZQ1pnf2G.ioHatEOPdmY3bjk7lwi', TRUE, TRUE),
-('jake', 'jake@email.com', '$2y$10$RU7.5wQr.743eFntHokafOCtSZQ1pnf2G.ioHatEOPdmY3bjk7lwi', FALSE, TRUE);
+('admin', 'admin@email.com', '$2y$10$ECb1z2WRMfBY0ZpyoXZhVe/B27LkXKiCgOcVwEQUEuiINZU3E4e0u', TRUE, TRUE),
+('jake', 'jake@email.com', '$2y$10$KqhyZNukhwazQfpac..ZUu9k8nwZ9tywivv4QoD7fE/pxcdIXS2AO', FALSE, TRUE);
 
 -- Insert into Category table
 INSERT INTO `Category` (`category`) VALUES

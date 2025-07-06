@@ -4,22 +4,22 @@ require_once("Database.php");
 
 class FaqRepository
 {
-    protected int $id;              
-    protected string $question;     
-    protected string $answer;  
+    protected int $id;
+    protected string $question;
+    protected string $answer;
     protected int $category_id;
-    protected string $link; 
+    protected ?string $link;
     protected string $category;
     protected int $is_synced;
 
     /**
      * Creates a new FAQ entry in the database.
-     * 
+     *
      * @param string $question The question to be added.
      * @param string $answer The answer to the question.
      * @param string $category_id The ID of the category to which the FAQ belongs.
      * @param ?string $link Optional link related to the FAQ (nullable).
-     * 
+     *
      * @return bool Returns true if the FAQ was created successfully, false otherwise.
      */
     public function createFaq(string $question, string $answer, string $category_id, ?string $link): bool
@@ -77,10 +77,10 @@ class FaqRepository
         try {
             // SQL Statement
             $sql = "SELECT F.*, C.category
-                    FROM FAQ AS F 
+                    FROM FAQ AS F
                     LEFT JOIN Category AS C ON F.category_id = C.id
                     WHERE F.id = :id";
-            
+
             // Bind Parameters
             $stmt = $db_conn->prepare($sql);
             $stmt->bindParam(':id', $id);
@@ -111,7 +111,7 @@ class FaqRepository
         try {
             // SQL Statement
             $sql = "SELECT F.*, C.category
-                    FROM FAQ AS F 
+                    FROM FAQ AS F
                     LEFT JOIN Category AS C ON F.category_id = C.id";
             $stmt = $db_conn->prepare($sql);
             $execResult = $stmt->execute();
@@ -159,13 +159,13 @@ class FaqRepository
 
     /**
      * Updates a specific FAQ record by its ID.
-     * 
+     *
      * @param int $id The ID of the FAQ to update.
      * @param string $question The new question for the FAQ.
      * @param string $answer The new answer for the FAQ.
      * @param int $category_id The ID of the category to which the FAQ belongs.
      * @param ?string $link Optional link related to the FAQ (nullable).
-     * 
+     *
      * @return bool Returns true if the FAQ was updated successfully, false otherwise.
      */
     public function updateFaq(int $id, string $question, string $answer, int $category_id, ?string $link): bool
@@ -178,7 +178,7 @@ class FaqRepository
                         `question` = :question,
                         `answer` = :answer,
                         `category_id` = :category_id,
-                        `link` = :link
+                        `link` = :link,
                         `is_synced` = 0
                     WHERE `id` = :id";
 
@@ -218,7 +218,7 @@ class FaqRepository
         try {
             // SQL Statement
             $sql = "SELECT F.*, C.category
-                    FROM FAQ AS F 
+                    FROM FAQ AS F
                     LEFT JOIN Category AS C ON F.category_id = C.id
                     WHERE is_synced = 0";
             $stmt = $db_conn->prepare($sql);
@@ -240,10 +240,10 @@ class FaqRepository
 
     /**
      * Updates a specific FAQ Record's Sync Status
-     * 
+     *
      * @param int $id The ID of the FAQ to update.
      * @param int $status The Sync Status of the FAQ
-     * 
+     *
      * @return bool Returns true if the FAQ was updated successfully, false otherwise.
      */
     public function setSyncStatus(int $id, int $status): bool
@@ -320,7 +320,7 @@ class FaqRepository
 
             // SQL Statement
             $sql = "SELECT F.*, C.category
-                    FROM FAQ AS F 
+                    FROM FAQ AS F
                     LEFT JOIN Category AS C ON F.category_id = C.id
                     WHERE F.question LIKE :term OR C.category LIKE :term";
 
@@ -361,7 +361,7 @@ class FaqRepository
     {
         return $this->category_id;
     }
-    public function getLink(): string
+    public function getLink(): ?string
     {
         return $this->link;
     }
