@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from google.adk.agents import Agent
 from google.adk.tools.agent_tool import AgentTool
-from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, SseConnectionParams
+from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, StreamableHTTPConnectionParams
 from pinecone import Pinecone
 from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
 
@@ -241,17 +241,20 @@ faq_agent=Agent(
     tools=[rag_search]
 )
 
+
 flight_offers_agent=Agent(
-    model='gemini-2.0-flash',
+    model='gemini-2.0-flash-lite',
     name='flight_offers_agent',
-    description='A helpful AI assistant that can search flight offers',
+    description='AI Assistant that searches for flight offers',
     instruction=prompts.FLIGHT_OFFERS_AGENT,
     tools=[
         MCPToolset(connection_params=
-            SseConnectionParams(
-                url=f"{os.getenv('MCP_SERVER_URL')}",
-                timeout=10,
-                sse_read_timeout=60))]
+            StreamableHTTPConnectionParams(
+                url=os.getenv('MCP_SERVER_URL')
+            ),
+            tool_filter=["search_flight_offers"]
+        )
+    ]
 )
 
 hotel_offers_agent = Agent(

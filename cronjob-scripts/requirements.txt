@@ -1,3 +1,0 @@
-amadeus
-python-dotenv
-mysql-connector-python
