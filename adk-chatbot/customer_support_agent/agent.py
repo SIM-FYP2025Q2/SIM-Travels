@@ -7,6 +7,10 @@ from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, StreamableHTTPConn
 from pinecone import Pinecone
 from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
 from google.adk.tools import ToolContext
+from google.adk.tools.langchain_tool import LangchainTool
+from langchain_community.tools import TavilySearchResults
+from google.adk.agents import SequentialAgent
+from langchain_tavily import TavilySearch  
 
 from . import prompts
 
@@ -206,9 +210,6 @@ def main_interaction_flow(location: str, checkin_date: str, checkout_date: str, 
     if "peninsula tokyo" in user_query_for_specific_hotel.lower():
         hotel_response = handle_specific_hotel_request(location, "The Peninsula Tokyo")
         print(hotel_response)  # For testing: you might return this in your actual code
-
-
-
 
 def get_rooms_for_hotel(
     hotel_name: str,
@@ -685,6 +686,30 @@ def airport_transfer_search(
         "airport_transfer_offers": sample_record
     }
 
+#=====================================================================================
+def initialize_tavily_search_tool():
+    """Initialize TavilySearch directly, no AgentTool wrapping."""
+    tavily_search = TavilySearch(
+        max_results=5,                # Number of results to return
+        search_depth="advanced",      # Advanced search depth
+        include_answer=True,          # Include direct answers in response
+        include_raw_content=True,     # Include raw content of results
+        include_images=True           # Include images in results
+    )
+    return tavily_search  # Return the tool directly
+
+    
+# Handle user query for trip planning
+def handle_trip_planning_query(user_query: str):
+    if "plan a trip" in user_query.lower() or "recommend a trip" in user_query.lower():
+        # Call the travel_recommendation_agent
+        return travel_recommendation_agent.run_async(query=user_query)
+    else:
+        return "I can help with that. What type of trip are you looking for?"
+
+#=====================================================================================
+
+
 # --- Agents ----
 faq_agent = Agent(
     model='gemini-2.0-flash',
@@ -725,11 +750,52 @@ airport_transfer_agent = Agent(
     tools=[airport_transfer_search]
 )
 
+# --Travel recommendation agent--
+travel_recommendation_agent = Agent(
+    model='gemini-2.0-flash',
+    name='travel_recommendation_agent',
+    description="Agent that helps recommend trips using the Tavily search tool.",
+    instruction=prompts.TRAVEL_RECOMMENDATION_AGENT,
+    tools=[initialize_tavily_search_tool()]  # Pass the tool directly, not wrapped
+)
+
+planning_agent = Agent(
+    model='gemini-2.0-flash',
+    name='planning_agent',
+    description="Agent for planning trips using Tavily Search results.",
+    instruction=prompts.PLANNING_AGENT,
+    tools=[initialize_tavily_search_tool()]  # Pass the tool directly
+)
+
+writing_agent = Agent(
+    model='gemini-2.0-flash',
+    name='writing_agent',
+    description="Agent for writing a trip summary after planning.",
+    instruction=prompts.WRITING_AGENT,
+    tools=[rag_search]  # Assuming this tool helps summarize the trip
+)
+
+# Initialize the tools for SequentialAgent (pass them directly)
+travel_recommendation_tool = travel_recommendation_agent.tools[0]  # Direct tool, not wrapped
+planning_tool = planning_agent.tools[0]  # Direct tool, not wrapped
+writing_tool = writing_agent.tools[0]  # Direct tool
+
+# Initialize the Sequential Agent
+trip_planning_agent = SequentialAgent(
+    name="trip_planner",
+    description="Sequential agent to plan trips by searching, planning, and summarizing.",
+    tools=[travel_recommendation_tool, planning_tool, writing_tool]  # Pass the tools directly
+)
+
+# Log initialization details to ensure the tools are being passed correctly
+print(f"Initialized Sequential Agent with tools: {trip_planning_agent.tools}")
+
 
 flight_offers_tool = AgentTool(agent=flight_offers_agent)
 hotel_offers_tool = AgentTool(agent=hotel_offers_agent)
 airport_transfer_tool = AgentTool(agent=airport_transfer_agent)
 faq_tool = AgentTool(agent=faq_agent)
+
 
 root_agent = Agent(
     model='gemini-2.5-flash',
@@ -740,6 +806,7 @@ root_agent = Agent(
         flight_offers_tool,
         hotel_offers_tool,
         airport_transfer_tool,
-        faq_tool
+        faq_tool,
+        travel_recommendation_agent
     ],
 )
