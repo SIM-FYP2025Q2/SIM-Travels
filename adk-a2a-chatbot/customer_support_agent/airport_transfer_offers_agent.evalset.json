@@ -1,0 +1,1477 @@
+{
+  "eval_set_id": "airport_transfer_offers_agent",
+  "name": "airport_transfer_offers_agent",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "casea72850",
+      "conversation": [
+        {
+          "invocation_id": "e-86d8dde4-eede-4c2c-9aab-3f60c15ed283",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Give me the cost of one-way trip from MBS Hotel to Changi Airport for tomorrow at 8 AM"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CuQGAVSoXO4plgW91XE27ogSHA-T8M2rifLbk92MZrNMnoa7pmjj8IL9xhsgaHtsUZZkYDdxNCrcfX2gvi8RSk1glem8N8wC4LlhtA8OMZHqJY1XFo4sdBKur5Q01gm3UL0MhhfVbLHLMLG2uqCVGWffl0fkDT6gpXqalzPIo9o983wDaMMzDUaEJkJqjKDJWAIG6FNvR6cLwgimvUy8SXiAz2Z9FW2Wz6sVv_5CcbJq2mBXJ4WJLZXkYqlr-0ctyvWrB44057vTeqb3ieKW4Zk11LmRcTbGiJlbTDz2KFSJkBsYkBI2_mcw8zHb3QLrLG_BBhH19Ps8MAcg-lhqn3kKYzGcMp720wbfEXwu4dSPySvzn6tZiLiQKtCA10Z8xcc75XoPhyhPPj0Hko69MKZE35w7j-UY-PbBLebLZVChhQ1vpFYaafNg1-uEDNAEuZJiGaAogXcOTAyEoEuhXJEU6WTZzQRorly5elbqU7ESsVAMT0lhjbaHMCAjfQfWdUTrcm6GIk11lOk4D17u25xEh3RViK6k4O6AAzchCmdcN3Kcc5-2rpJd-8WjfwuZ7H7cKXntWBzfX_Y7I7nmR-qrsO7vFywnvhb9A_SOXeojW_kqDYXBCmLsI3gLZQxZROfhvCEvRkjgLXmJFVQaCYOWTxHJ4OuM3_DBMEcvzcGQ8C2nS0gSgmn3XI2yBhS7uSN84HiAm3XAKZg7_ejqYTozRMISdqWtFJo8vy0ZFkFIDvwvSqPWpGsVzWAZ2WY_LJLK9MJcYDqKQuONApZdcd_6DLTpPvltnfDUJuNIIiqLbvEghH6E_KzynXN3qAMJm9Tf-MQ7z5GTQDInLeZUPJbzs9xXvKldKa0Bnp7mGo2QCYc0WWvDbwIQs2Kpmiddu1W5c5ACbt6uDVeImhD9BrHPBoTrPgjzDj8QUvM1rDLZR_mScDM4VW3QYCEigKVJPX_RFgl-gUSiUmRu0k4MwMjc7CGOr0CEi_QGECabhFVzUGOIJF696FEeFBp--yckvZoHtfSpIlZFRa85UNihxm9zaCjLejOs4xqzMVOK22sgdxQjz6Azaw4sm_5CazvWdcP_9PJQVqXENhF_PQ8ZKxlgUAu8A7eCLJ9cTka9eI_vLYjicDISJcD876J4mEjEqEQwy_rWmA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can only assist with private hire vehicle offers. To help you with your one-way trip from MBS Hotel to Changi Airport for tomorrow, August 11th, 2025, at 8 AM, could you please tell me how many passengers will be traveling? The number of passengers must be between 1 and 9."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-02300ee5-cf4d-4b80-af61-77e20be5309b",
+                "args": {
+                  "agent_name": "transfer_offers_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783426.054024
+        },
+        {
+          "invocation_id": "e-50d1e080-11e4-4a0b-a8c2-5ba6b3d135bd",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "It'll be for 2 pax"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CuYDAVSoXO4EJ8Z03DgUJWzi7KdEfyKEj8G2jKTAaBod-_xrS9GmlGoo-9iDZmKFYBctiUby_8ZF1bRFmq7TK9qYEYeVglh2W4owv9zYkKjiw2u0cI933xb9NB5orgqiselvuKOkE3M-5lDNDx3Y8XkU81feHCAXuKexE95V7mKvnDA5bgTTgv7Lxdsh_1ir_vGS76KDxXdvP1jOa1VjESlYyZUhaCfy3A7XQ86mJiUlb6sBFKEoM-m97-7OzElWzTbVGy4YBzqAXPQgSvemowka5cc-gPUIAQ4BE7D-D5Ot0fe_0GmzMyBFA-iHfPz7vipMs95fbWvVf-I4q5U4gc-92Gcv_bkn4ICql86zmQfG2Lo3bReUhwTkbHHgWB3L7HUtttkQjwSgcMykDtTF8cF3G81sQ23EADjuMQw2bzMrcFNO7E0KoX5DG222_B3XyJVaQ2Nx0fyRTwlbvgahCycqzhF2qsj5iR7HMncAieXc7mJushZYa5wSWzx9Inq-iprHI-3jsmE4kAF5ENAbxhPmKK8gVE0JbXE2wblDQeOjkesfftp32GCu5w5stDWDKdLgVRnxnhqgTIzrGAZwp3e8PJPoQMs_AUMf-qjKWCKKP8axsYka6HCAGF-TokDgXLyJyGbvSkFY",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Great! Just to confirm, you're looking for a private vehicle transfer from MBS Hotel to Changi Airport for 2 passengers, leaving on 2025-08-11 at 08:00 AM.\n\nBefore I search for offers, would you like to specify a preferred currency (e.g., USD, MYR) or the number of baggage items?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783440.943002
+        },
+        {
+          "invocation_id": "e-9d38acb3-a007-4a21-8531-5d42fb2a6e68",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "ringgit, can I ask if heavy bags are allowed? I have 2"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CuQGAVSoXO7p-DioYUrpHJxHykAjfYPjuGeL7G-PryXX5uQoJ2oMXqm-9fR6_wRJpUBLHzIoQ1r83LEt7Ja6dJWiq5p2TCpfMxH3Bofebwe69f4bPbQ25TVDzr0pcNNLAesqoU7Py7ICwo5hP_S-rypeg8THpRqQbhsFpJnJnoghoHy5fyDXEaCRkMZe53Gy3ytaDSG2DbtPVeannvSferRjYtpsyiqxUO6HQFF_aqrys_7ZY7_wqH49FqZiDSuSp61rO-0Nkcoh1yueh4qTtdUp1fXg_WdOtt3fxJbGMCKqRi3FV-NRoahSuS04HwjAGedo6pGXQNhiBsM05nPK51xT9-jFdOn4UXB0aWQBIffE58df9gWBaUz9cE32XQMjUKWX_LTI2HSL5jmPoo4hKnLOxMqozx2CwfV8w09S3c8U8r_4ZPfLyBS6LHnq-e9nSWs97O_AKnLSlwRltyj8wfnFhB0Mg3SnM4qjLb650Z7eAsfQI_ARw_sl8AISo07tYQyzPl9xq8d4FWStykOUL6tIn_4hw_F5KzMnWFnefj-OsZBGyZZeb0SyWUWVUbCutcs01qbrE1FW6v8whdXzkWR-7Ijd1wv3xR1Ui6f1Pdh0Enjrgs4A2VY3w3RAg_bfq2-8rIuIji5LXChMl4-ElRQ_rMGUEYtAXpqnVUpQuhvuWAjYRpymm3Q36n3xg1X_az9d3sGhCUEuOrpSC9ew_uScpI-gVYvoFDpLSPidmq-qyaO7EdQhOcEe2e7UD2NYxPWCvVqaxPT7r6aoA_PVADJBY7YCO_8ehx2aVOPzFJN88jOdpFw9WLymbx_xSYHwFIyu7utoyXb86lFXPvAbuw_STrap6ybbxZSUXsUBr1aTrIUhX9IADyJTkGzUifEb7YjePoZreL_XcaG-8ZX5fGYVlcZnaXWcm6lI_YRxp3qNelaeN6j1Cco8d7cwyYn1OzMWhFQm75AxZl2IPdeCdH0tPePi6TKOO5RUq9_01YEz8Dg1ZYKdGyyZeT_iwilpNBagSIC5P5udNkx3SNvQqS_JGIAAhXuDZJ_V0uSBITZWu1AHy86Y0J9Ul2Cv9QDnwL5s7MnVtv4KmyXzzNwHkYPXsTBNzPtP2Ola6R4tBJBWhWvLqc9PJlW-Gul3jwejxsP3mVT_MA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes, heavy bags are allowed, and I've noted you have 2 bags.\n\nJust to make sure I have this right, you're looking for a private vehicle transfer from MBS Hotel to Changi Airport for 2 passengers, leaving on 2025-08-11 at 08:00 AM, with 2 baggage items, and you'd like the cost in Malaysian Ringgit (MYR). Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783456.94268
+        },
+        {
+          "invocation_id": "e-e474ebd3-9fe8-4579-8695-9000232f7420",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the private transfer offers from MBS Hotel to Changi Airport on 2025-08-11 at 08:00 for 2 passengers, with 2 bags, in Malaysian Ringgit (MYR):\n\n*   **Start Address:** MBS Hotel\n*   **End Address:** Changi Airport\n*   **Date & Time:** 2025-08-11 08:00\n\n**Transfer Offers Summary:**\n\n*   **Elife:**\n    *   SDN (Toyota Camry or Similar): MYR 137.65, Fully refundable prior 24 hrs of pickup-time\n    *   SDN (Lincoln Continental or Similar): MYR 137.65, Fully refundable prior 24 hrs of pickup-time\n    *   ELC (Chevy Bolt EUV or Similar): MYR 137.65, Fully refundable prior 24 hrs of pickup-time\n    *   ELC (Tesla Model 3 or Similar): MYR 137.65, Fully refundable prior 24 hrs of pickup-time\n*   **Drivania:**\n    *   Mercedes E Class, Audi A6, BMW 5 Series: MYR 300.59, Free cancellation up to 2 hours prior\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-9b185408-83ee-4904-841e-f58eebc697e3",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783466.249692
+        },
+        {
+          "invocation_id": "e-5c8d84e9-da13-4bb8-9170-8f2be7896749",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I will be arriving to Singapore at 1AM. Is there a train to Bugis that runs after midnight?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "It appears that trains from Changi Airport to Bugis do not run after midnight. The last MRT service typically ends before then. Given your arrival at 1 AM, you would need to consider other options like a taxi or private transfer.\n\nWould you like me to help you look into private transfer options from Changi Airport to Bugis for your arrival time?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-b9818864-2d64-4922-acd9-66fef492189a",
+                "args": {
+                  "query": "Singapore train to Bugis after midnight"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783510.930318
+        },
+        {
+          "invocation_id": "e-f3954af2-f4a2-42ec-86b8-62482f5246c3",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What is the duration of travel from Noi Bai International Airport to Amira Hotel Hanoi? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "The travel duration from Noi Bai International Airport to Amira Hotel Hanoi is approximately 37 minutes by car. The distance is about 26.8 km. Please note that travel time can vary depending on traffic conditions.\n\nI can also help you with private hire vehicle transfers for this route if you'd like."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-b6ead4e4-ceec-4edc-82c0-3ee45c1e6353",
+                "args": {
+                  "agent_name": "customer_support_agent"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "id": "adk-3c6f3b23-88c0-474a-aec5-b650c1302132",
+                "args": {
+                  "agent_name": "transfer_offers_query_agent"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "id": "adk-f59fe611-d2de-42a0-bc07-01f0fe4eecc7",
+                "args": {
+                  "query": "duration of travel from Noi Bai International Airport to Amira Hotel Hanoi"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783546.265875
+        },
+        {
+          "invocation_id": "e-8f9ea955-b271-4c34-95c7-f00a1de01b60",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I require a private transfer for 6 people with a lot of luggage from paris airport to ibis hotel "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CvsHAVSoXO7u1IzEgbH6EHPxzuitsVXy2QNrcwUNCYMpEFEU3N5ds4CRR_Z_4UPjrYSt-yEnncIB2MxllEatzA_Sl6G9YmMCJovBc_SJhnLmmBfXLkWRloBzoyTDeI8uo3l1KndZF5Omj6b0U6g7gq9-nKssCvQyC-wZ3v3QvYKpW9pe1JoXE7AL7twLn5HKLD1OpWYfISZM5Mituz3RYaJ-kNyhOddDShG2YVRV5Vc2exFCwdE9WQshbvodds6xOlgIHw0JiIvF3lxkm1_zrG6_VZ6C3iI3Bi10vwE6M2AYi8ETA_NKwHY--tQSF0GrCVL_JZFHxzRfe-RougC194NYHPWYRvDgHD0hfWW5GBx9COnsE3mg4JwQE5SxxRBp4BhAvwlSNd5qST80Gigy7n-O7Jf4dpbMb8WwgvRlPOD5-ysCRIQY7wE6S-ps4tPJLuzW1bRfAq8rDHk6t_Mtrv3rGcAEu6XIQwKlkokg1rwLND5EB_bZpR3CgqlJDrg5o5a9gB4t2v5IApRXk_ZO2m4PC_gwCBT6fRL6YtgrDOpbGGNTAnUpsly7xhsqilRTT6PViLnpRy-l5874DqNsRr1Uwv8iGNxZDARmUObPamhmdy8xzov8qEXwvNd4AMxmnfDPe8ZZ5MR7su_NdFpmX1-6JmTV-PiKlEzcXUzXOJBu_4m-6nBTzb--MweFrnYtZUGHOFrSCRa7z4lxdcD2RreWNBdqpU8UfAv9faSJptNQLt8VpPEMSg4S2eBEjC-nQuMM3e0MwtK-eNSE4zErAF0kJbuZyIznMWSKp928GK355f7meWa7NOY8PQE1eHTmN9kZgrERhL6avHHjiuO1PYTI2gXtdrO_psjqJ0-IqMu0cibKGGZY2yjbGii7vBSmd8UxUGyAemEqJBkyu37tCjZCwd2zezUA91pE4aUztix_6WlvjkcEcIfZ_jNh_Xw1W6OnpcsOOsgc8IvvEYmS3RyjE0raI59abkhXQxRW40EzoTQCFKWKIxmykzTSklmREcWpgmCdJABEx_lqgNDthit9vCXppNUczZ-kCu2KsptlBTABPIAx7jnxeQXxivepqMIz47b5ZnJ6gL6ym4XENG26hsKy2nPmc015Q4zAl9_FyvyzWHV-_X0c6KwhEE9Qdw1HhOclY42Cc5EExQc-M7zqglDg9k53Hms0Mdmd7RCpUwSiktlQvd-k3Rby5AzAgT4FVEtFD-Vm25TojdsF8JqtBHqrepi-ZERZ_V2HY_52cTUmEjT8QcptTDCAtWl6VMSNH7q7XAd_04AnwP69gVIpcixM0O0kMlL1CzD3YjYka5XhtckfyagZmO2A4neDAEXOMLN-1gxZQTZuUws=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can only assist with private hire vehicle offers. To help you with a private transfer for 6 people with a lot of luggage, I'll need a few more details:\n\n1.  Could you please specify which Paris airport you'll be departing from (e.g., Charles de Gaulle, Orly)?\n2.  Could you also provide the full name and location of the Ibis Hotel you're going to (e.g., Ibis Paris CDG Airport, Ibis Paris Gare du Nord)?\n3.  What is your desired departure date and time for this transfer?\n4.  Approximately how many pieces of luggage do you have?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783604.860553
+        },
+        {
+          "invocation_id": "e-e8084a25-b24b-4ebd-957e-b0b9dcbd5b1d",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "CDG, ibis Hotel CGD Airport, depart tomorrow, approximately 7"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "Cu4EAVSoXO6-KG0xV65kJlsekTZFZib8QeP9x9COXOHvJLyd46HjLUQ5Ts2XeKF1J62akkl0haL_lKWeah8ZWw1Y4yudHNUSFSM_U9UllsHUTaP0Nz5pa4pvAAU0GTTcnDeFWid0UJ-5Xp1oUVqA8IM4wpdHVUxd1D1rOY58-490A6FzLm6IGq1yzcZ_dpUSAKw04mIarYNi3XL_YDSBXq3t-hPAWsTrd3uiDvWUN9tbqDLjA8XxYNjybH8radscPafgkpHNCgZOoebae79ZjLn9gL4FY48jxQIC5yiIdN9MO3eSBxnnq2M56RDPh62BlVzH12Iv0E_1hbxKR_yX89jwuyl7DW3YAtc_OE0sVIM9mKGlQEMLgFicpeCOb1B5EAsyYeArQtsIn5ky0iCAr5WUTU3NfBXOvR1nCh6rF6lxemeRxxoJyNlDAu6zAchKgRNzxuYnWML2yb2Tk5hqiq9o7FMfJ4E0e9raJmnT8M99Q4KVFiuZ0uiq9QsDxHr1hWHqZPab-8RjTnB7ziB-mg6iUdsn2Y4OV_jOGM3ydmiQ9st883fbHNX-VUDBcund9xSNh1j95HWL_H9gVcZrT5jQOtarsQ7w5AnPC1KkHbd3Bcj1g3cyhZ51Cehi-EGEViuYsJ0rbVc5zMu7w6En8FqI6VrKrehOSqYF36kB-23XR91rzTaqLJNKAhV0XUJC8kXdC1fRUXxbpMN3KHIc3CrYq3sTVHm0nT7wOVDbBR6aUmocWOpPnh5PENwd66ODzsQFst_e3ywOk9NP8IrLSRxutW7PX6mXeXlyqXKd5cQPnnLpNpTuw5PCxkGhrH74eA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Thank you for providing those details!\n\nJust to confirm, you're looking for a private transfer for 6 people from Charles de Gaulle (CDG) Airport to Ibis Hotel CDG Airport, departing tomorrow, August 11th, 2025.\n\nCould you please clarify if \"approximately 7\" refers to the departure time (e.g., 7 AM or 7 PM) or the number of luggage items? Also, it would be helpful to know the exact number of luggage items you have."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783649.066741
+        },
+        {
+          "invocation_id": "e-51c2244f-1a4c-438a-8d5e-d956adbc6edc",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "7 bags"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "Co8EAVSoXO6XxDo9zP9JXEQT7uw3UVc8p2yTrkLhojc4HUMa0Nmucn4Ku8wXhM94vQqamZ2h5HMZaR_FF01oo2wUVhTHhAb05CjSpJxOFOsMBIauxPIFMEW2qnApP1zhs5MLNzyWZftpeXq0ytZ8bhCd_ABzami9o-7chFvQTlCJh7N3UJMsu_HfTNwsi59LL3foxkJilto6DoRlB4L-QbNZXBTO2eWBN_T-2tqaKI-9dB9WAgxRjen_RqJE4Q9OTO2Z00dh6nVq-WtKCu1d2xYpQ9h5eoQwYNAwb0429AzDjmlK0rs2qWZ7V7fhlI1fIiOChSTkBzyveT_0RpiLaOGtNSg6euw1Ko2Yh0Xv8ZD3NMSQyblk8JhynzXXTT2TbgVA8Xbtundtqe12CvUxJuBejdGqSlMR915Xz-pofholiieinqs22yiC_fBhOD7mo5SLEgvyKKuIneOlEkMAxdxmF57bN3gR1FPiwOmRAShpwWj9JYQlnhpGgWg6_3RCg3pNaYFFprHgO66jXVqxJxo_eYH54-jaMyC7oopy2gIa4NIvIE8lJDY5RybvTlLvFeWUYWwzHTDqqqvKUrob9NH3wC7XLpn1p4n4x0yrvMCQGyIDg0i8lYy-Y2HEQudCUBb1Hu3tMqtVSUsNo4dLNAQL9VTWYvKaGbH-1cGKm1VY435aTcOKFZ5fYMLByHFgI1A=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Thank you for clarifying! So, you have 7 bags.\n\nJust to confirm, you're looking for a private transfer for 6 people from Charles de Gaulle (CDG) Airport to Ibis Hotel CDG Airport, departing tomorrow, August 11th, 2025, with 7 pieces of luggage.\n\nCould you please specify the exact departure time you'd like (e.g., 7:00 AM or 7:00 PM)?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783661.684479
+        },
+        {
+          "invocation_id": "e-c419ca46-2fe6-4bed-9ccd-dbc2a1ea961e",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "7AM"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CscFAVSoXO6eq3r-Zi8-NrlKjH-VkETx5fSVNPqYPe0UFpI-exl1sAG1G0R8vT_93sOJuTy2emPG83w7nIZIi4BcqhQj61T1ZkVhiKVog_OZMypt_Fi240SI5HZo5Iu9OT0rsDYtfbRYwyzPSPQb56vc7GbeJX4VIHSAEgyUBrk-C2-VOb90OYJhjIzhspADQ6T9t91Jy0oOksHkczR-9lvTxB64KDlsKLrR0xZmulig78OzVifiV8LBXOVk314ABIOcBjXbhn4PGNls0xLh1QBSRVZoujgHJ2b4cjt592ms9JsnnOD03FEfFKSCAi0IMJBzGeG5DJDRuhT1Wz8HcyNFovmfDq0rbbMJiPbYsioOa7eKWpDc7HJqNrKKE9CJ_1AUys0tkW3w-Bup6FE_x-dokcNiH3JeKk3GrmL3dUz89kIPc0dTeYhNNlGVK2HD10Mr2--zdVdVwnN2kjQMqF-jm5xkqvageYvohRVd8T_lq9ye_0I14l6xZNRpRqFe33D_aagF-EpPRuwqSb9lChZ30K77aLBIBIjoEnB_ezVnuwtQzZOkHEBCdeWFac8ckMxTqfJqGZtAhDDV3UK_GYord8Fby6IQIuIzcTXmbMhqY6YVi6yBhNjq-Tv0blIHcR5J3qLhrTTYOpSEMQBksLCz1QL6NeZG5BJMjI5tT6HCf9CbSQWoGhu4b7bz_97IKoulLjrJXifrvcVrS0gp1DoMDGieLP66QraBu1BhokugoHFGO2C_dF4uh-wZiQfacAM_ImSbdpFWDvbAGUR-WG1m113bIoI095ygtD2H0psqT8vt0Z9Eyh83q--m0F08uk_9n8BPb3XfWb_cATX9n0Gq-DEKwoWC_7K00Kk1jx6wPZaJHPeylCXmuoBzuRVKkx5pLzy1d7gayEYqdpGc7mK7egfo4gdO3l_jv4QeWXp-vZQXnozSgeAs",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Thank you!\n\nJust to make sure I have this right, you're looking for a private vehicle transfer from Charles de Gaulle (CDG) Airport to Ibis Hotel CDG Airport for 6 passengers, departing on 2025-08-11 at 07:00 AM, with 7 pieces of luggage. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783668.865776
+        },
+        {
+          "invocation_id": "e-b56a1255-6d1c-47ca-8969-b9534f09e536",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yup"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the private transfer offers from Charles de Gaulle (CDG) Airport to Ibis Hotel CDG Airport on 2025-08-11 at 07:00 for 6 passengers with 7 bags:\n\n*   **Start Address:** Charles de Gaulle (CDG) Airport\n*   **End Address:** Ibis Hotel CDG Airport\n*   **Date & Time:** 2025-08-11 07:00\n\n**Transfer Offers Summary:**\n\n*   **Elife:**\n    *   LMS (Lincoln MKT or Similar): EUR 75.32, Fully refundable prior 24 hrs of pickup-time\n    *   LMS (Lincoln Navigator or Similar): EUR 75.32, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (Ford Transit or Similar): EUR 75.32, Fully refundable prior 24 hrs of pickup-time\n    *    BUS (Ford E-450 or Similar): EUR 75.32, Fully refundable prior 24 hrs of pickup-time\n*   **Amadeus Cars**\n    *   VAN: EUR 231.63, Cancellations must be made at least 2 hours before the scheduled pick up time\n*   **Transferz:**\n\n    *   VAN (Toyota Hiace or Similar): EUR 97.63, Free cancellation\n    *   VAN (Toyota Hiace or Similar): EUR 115.82, Free cancellation\n\n*   **Sixt Ride:**\n    *   VAN (Flexible group transfers): EUR 89.25, Cancellations made until 241 minutes before start time"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-af85b069-3251-45ec-b3ee-258640c09966",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754783675.645074
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": ""
+        }
+      },
+      "creation_timestamp": 1754783785.8445363
+    },
+    {
+      "eval_id": "case4072cd_run2",
+      "conversation": [
+        {
+          "invocation_id": "e-9628b025-0016-49cc-9a0b-a698f97806dd",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "How do I get from Changi Airport Terminal 2 to Marina Bay Sands?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CrkFAVSoXO5WM82XXlSdWlyFb6uxnijCRwE2YQeR_-ojo-054pkJZpqsVzR8l1zChlQsX2U1l2i2VkBMl4rVdqH2NX_EzFADtkx6isIlvVatA5voN26pWF8cPk24VOozTC5leILTRmmvOvPHtzT0qshTB2jJPyuSyimU6gqPULrdHJMPf1bw8UQSO5-o8vSVLafqAy_qrtLWOTXbTTtNkQ1uX_Cz7_rQ4tPjYQI1EKqrrPBIL8FyIeKHYvJYXccEZVyZz-yJk166Ydb-9usSna3BXHomvWSdCTb_IwllR8TlXFYYRYGWaQzVRJ8ovEtfhbJ4hExRXCAEi7fysGVXj1-zL977yXq--WxbACuYsl7SGUt2OKkaQKvdqrBSke8lF8bKdedojPtwCK8Ni30QBQUS7WXRHNNZzgXnyKUy-OgvLh1WvK8g-Gr2LCT5mRM25AnOcRZKU4Jluw5kPgWDjfF6kHXGSmONodEMqQnl7vyelIqWiBSwrLQFDgxfvUgvb8DzXNxZI77sIkxxwHWXb3rixb7awxDVBE98i8-c1WsPhACW_foeCVDkEGupH8dpu1tqEJ49N5G045AICp_dGf0unV7v49zejAwAZF54E-1gdh85Q0mMYnHVcox8i1Qjk2aAtzwkGCqv0DFF9rt7Opd2mVrS5pwCJidxPVBk7hgZfpnbQTDo8WOGEyNttnfYrNBRX9-4o0WpgsdeDRwODGH770IoYWOq2gE4-h5bWcBl9R_2kosxzTGbv1hX1TqGnty0QIIpNFOFsmC0ZDLVFtvoDOJAKnXArx7BeG9Aes5zMs9zbUMmmJ0_uqkSijaAr2lO15fT_pnYah3XunR4ED2uvqj3dBB5spUb_jC70vuku9EmarXhRo-SYofV9go541NxO9LYwf7dbUP_MPqmU6BgSOkkILzzzq18Ig==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can assist you with private hire vehicle offers for your transfer from Changi Airport Terminal 2 to Marina Bay Sands. To help me find the best options for you, could you please provide the following details:\n\n*   Your desired departure date and time?\n*   The number of passengers?\n*   Any preferred currency for the quote (e.g., USD, MYR)?\n*   The number of luggage items you'll have?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-cae3eb28-b0f2-41df-9ec3-646c1cb63cc6",
+                "args": {
+                  "agent_name": "transfer_offers_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829914.75137
+        },
+        {
+          "invocation_id": "e-05ed0b92-7c52-43b4-9cd8-d9bd397f1158",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "On the 16 aug 25, 12am, 3 adults and 2 children, 3 luggages, pay in SGD"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CpILAVSoXO4TpW9VrEYORPW04Lz-AUO1FB4rGE-T_QCjc5fWMANZMCyBIqsCrM6whG8uwEW8wx5UrXM5sG37uSEMIeC9V9pSxP7xQLKRjjOEPmMdoby7obtnIhsvGbHkvqmHNXmW4kyx-1N2CIkXOfPtLBUSKUkA5sVbpmap1dslhiHSTdHXfa6Peog7vOr7qOGkMsADeQYOfWWnxW17O-kJXHAzc2E2PWJARbO7q08d4NAETlMfZiGar4A-E6EBDKs9WV-EAIDQXhkqKlGTNgXlb1C-_LbmOSvPd7WBrwX97qacT10SyBRyy4tNkMsWa1yDthTjlcr3bRse9QiPf8W0-0fojR2P_avJol6x81XjwffgXPa-tIO1cCViDDi6zKJVDaXPSPcf7HJ46OP-OHHMHHWgwRKmdd0-I7I3i7ZogJylYZxm0vS6HgVM3bHz6CWCyQk7Ow6pcGI3GvElTVN2VkMBKofeA1ldMYBesGJjWEk-bnMDNZfY9jWzCcI0FsNhn1pesXggtdm4WJ-zYWpgGhPZzjReH0uZ40lhXHouH_0LFyGazkeZYhmdeZ4q2dusn4JzIx9cJPjWdmwkcVZ12I3bQe-XfTuc6w3ltrvAlXpSeOF8gS8KCLNtfUv1Fiu4X5lAIxKUZhYnvcFog5nmMZvJElDfNmBV9mmHsegryHzCCi-j80aqG26FoCqOfo7uVkjLtenYUUK7keaVKoz16Sp2s9spSd5eJEQMopQQ723xzltpQHeSGTJbF8muE9QZVNiqCA3J5ysxdBvsfDBL9v-tJ_H-ptXyp01bi8uuD0tGcyz-_AUs2AZTOQiDewCnEzfPHNWNOG7hIFx6ArN-B79iJJwNyeTAQfSnMLKOXTSKYTVfwaC53FwiBHI9NUmGebbJGPjKTeLp1px4FS9RNVMOCCrFsv-f_t2R8E-7c7PZTA6Y8SWPZG33NktVSQ66RC-NOPgaeml1T-ks6k5kF_400bNuhmf2DpTLOXNm_903QXTZDcUIohpFqE6c4pj1ZOxRuO39n7iRlmZe-GSqvZym3hpGAG5Bu2zP2A6fUfql5T6vuSrBh4LjUHhRWRlYW_0XhDtrcCJgoGEb-AaxRZbxNl8B0NL6KnuW6QZIiduRn3XR2IdH_Y2dyuK8pSZ5TmQaaOls53wBSqNYlNAkQOL3kOtYP3ieHuzywz4w-WdPEdNPD6d0R_oCIVZTm00OgRYbdpftJVUZd9-SX5ljt4XcA-DnpbxAzL4qId-rTYQs0M1F1q0JHkqKWP6tuAL0vL7m2y52DtVnD22acvCtShPHPhhcOgUAZjR2y4iXFOYNRi_TiUt8HoiK7T_JsBlO0TdZeCmBRhIXpt8eyF3xp7s7p0VjhUKX3oR6nrTt99KhH3GCJnY5d8gGGHcikbQMQ8KUxIjcF1Xn-qqTOHOA6jg4gsck8-GWCGhLhkQhCEV0rWYy8QbUSjihDt9XU90S-YvPlJfWM2hYO2Ldsjp9SVzHWu9TEDzCtVVGM0BJqIkz7KEGjldNpMSvtwnMryrudnNkUEKOblWGZCiLPq1dxyRy5nTB5Dk_Umqes48znPFVGB2vp_NzRllFAwPZF3JP5Nw7Q2deYrBMBZ3styjXUoS6W9l7Uxf9kCUQ4CZ1hmOWAxRkNUzUVsaVftnLQNypcvaRY8T8zP3zWNdZLpGNNNettMR5tuqrNNfQy7uI-BtXHbQ-I3ee6u7AMZK1HOcCzRo0nTjmVAIDrAT10hy4vw4FrW_2ssGfThoTg2iXhMIFACLzUOlA3DOK8xjR-WzZUEpVQetf0PlN-tmDYCk8Z1qgLmoiCcRaGkcyzDOUnaTPDdLLYvySc3IJJ4QMGG4Oa7WnmuQLgsBI67eUplmOWqNEerGJgE-l8yoJrFI7D7OebA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a private vehicle transfer from Changi Airport Terminal 2 to Marina Bay Sands for 5 passengers, leaving on 2025-08-16 at 00:00. You'll also have 3 pieces of luggage and would like to pay in SGD. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829932.729596
+        },
+        {
+          "invocation_id": "e-df1dabf8-452c-4d40-94ac-9b63c8363531",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "*   **Start Address:** Changi Airport Terminal 2\n*   **End Address:** Marina Bay Sands\n*   **Departure Date & Time:** 2025-08-16 00:00\n*   **Number of Passengers:** 5\n*   **Luggage:** 3 pieces\n*   **Currency:** SGD\n\nHere are the available transfer options:\n\n*   **Elife:**\n    *   VAN (5 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   LMS (10 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   LMS (12 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   LMS (16 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (8 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (12 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (14 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (16 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (20 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (23 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (27 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (36 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (44 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n    *   BUS (55 seats): SGD 45.78, Fully refundable prior 24 hrs of pickup-time\n*   **HeyCars:** VAN: SGD 147.00, Free cancellation up to 18 hours prior to ride\n*   **Sixt Ride:** VAN: SGD 130.58, Cancellations made until 241 minutes before start time\n*   **Talixo:**\n    *   VAN: SGD 228.44, Free cancellation up to 3 hours prior to ride\n    *   VAN: SGD 229.78, Free cancellation up to 3 hours prior to ride\n    *   VAN: SGD 278.83, Free cancellation up to 3 hours prior to ride\n*   **GroundSpan:**\n    *   VAN: SGD 346.74, Cancellations must be made at least 2 hours before the scheduled pick up time to avoid cancellation charges equal to the rate quoted\n    *   SUV: SGD 269.69, Cancellations must be made at least 2 hours before the scheduled pick up time to avoid cancellation charges equal to the rate quoted\n*   **Drivania:** VAN: SGD 99.47, Free cancellation up to 2 hours prior to ride\n\nPlease note that Drivania quotes in USD, so the price displayed is an estimate in SGD. The operator or provider does not support SGD.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-4b61aa08-faa4-4f1e-b1f2-5e1601aa305d",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829940.617072
+        },
+        {
+          "invocation_id": "e-cdf86803-4cf1-496e-b1c5-8e49f8a2d7a7",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I need a transfer from Kuala Lumpur Airport to the Petronas Twin Tower"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CvgDAVSoXO5XMvR6K24LgLCek9gjuCcvzJQk3Ek1cYjV8ez7zBoMHOUCBs1A-r5k71F1Ta74fwbHWr8AWjUz0Q-0xirBn3LsXM9vtk1EUsA1snu163FlOYbh4uFJ7FnpmT7BKbU4SE8E32iqxtg6gU__gYQb1_6sGtTIcxGYx6VYONitIyxHtY4V6SxvxSAYc11W7HcUqdbm8P1ghWM12HHtBjlY0Fkz2BK_abQSNjWNg2mG4IsW6OVjVIYt4IR1qUam9EpmV4TsdM_RF5K9AIAWpkroZsQhZqYV6LwUyVj3FXE0GTPQO0JTDfviyNv3_ndcO29nIm7h9k5rYF-Q-eRt9RtrHgJykL32pFeFF361SKj5lt_976lbVqKIqpzhEIh5GHx_0Kk1NM_4_mEbqPv0_purEz1GZRiy0ZeabP4zquQauCuHsFHoXcdq7DA2f3F3JHen-VlPBngxuIAnHVC56xLIszlurrkhoAKpYp6ysOVp94WhrZ30nmCRLiKuBNYmJVoYklT6sFGTtq93b6y8AfviwbxK2IQDTvyyhpGuoTr9JvtjZBldt2NrufgV-ZB-qYc_NmjAmAZbMtYV7zCRaxvW4PjsMFLATmlz3ulRpdoLpsLonK12xvJf0znISNSTpAubeAdkr1F06A-ic6J1QXAUw237OO20",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can assist you with a private hire vehicle transfer from Kuala Lumpur Airport to the Petronas Twin Tower. To help me find the best options for you, could you please provide the following details:\n\n*   Your desired departure date and time?\n*   The number of passengers?\n*   Any preferred currency for the quote (e.g., USD, MYR)?\n*   The number of luggage items you'll have?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754830000.879589
+        },
+        {
+          "invocation_id": "e-0a3ec95f-697c-48e0-930b-05f2cb2d2e1f",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "departure 6 feb 2026 at 12pm, 5 pax, MYR and no baggage"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CpgGAVSoXO7a7Sqj7d0KWEZYZAGGahFBWn3HLb0P_gAnKGgaWyOwu48GD7cfTP0sYgaxGrKq7eq0jWodOt2rJ99AmkjOq8LWZsC9H4AzR9cmbZ2fUKFpMKCGfVxaOlc5_LAL0QPYYLNEutXLcSmue5bmEiKBprK5BS0vcQm9ZfjtJPNWRhgIZbvKmasdPTTl1s5t1p-2GxLRa5DN1xuN2I-UkQBxZViT50F8k6btqNlgufFocqbHUrnYcuIofpUufnkyuQPRs1fXE8rz2gNB7On0h1UaimQ4t15BCmyL_EmNs1S4keZ26GPIt9Rng-bAXrPGXu10DrcrnO6HMZwOYIsln-d0SjKukguQzrLsECmHgxECOrYjV9Lo29h3YIzYxU5ropyMR8BSsSC6-YjRMbVzN4cxIVLRYdbdQNP42Ea9adGDUqzQxwGMdMFXBEFwORlQC5KA7HFCFOpqmlK9HJZO3xvg1qzyIB87AQC-how4GglA54cDjfx8nGCOFgSocDS97MfFKE10_l4kypZrl4VmfzXXFoyFglgbVnKuAt2FauJhKBjZHd41R39PP2lApUC1Ljuok7t8DeiRSqB8pQOLyoLVgWUADR-VNjIxOH1S5NZ9j-P1QnSgNYS-RsME_FqIWZgsGh5LjSphY4iiY_SseUoHrjAQ2XLSmEu1sTV5xI3Kxx5H35XadmbHapG-UFHcg7U-di8oNF2AYWUUZbtigxj1SedQpFHlnfHvX3BkitDGfedahU1nr15W5pc-cYyor47C_wk00U1_h7fEL85d4KvvtJCrRtljUpi9Vkv_frkpunKz5ToaiOupHm7NYIW_ForiIqXdZ_qZ92bciIPyx2_FstsGBc-CDQbwaVQCzXl-Cn2vL10wNQnwzdtibLTYIMqB_NmR4-N25_ZfwjHec_U5mJYiXGKOthM9zIpYclMXxDT3b5g89cOepm457-WpctItO91TOosadWlyWp6CUFVCPhw7NEjfg6ybvxKTPdkYL9ylT_ki8-5yASy8UOfU5ceeaawAs0XACm92UcW5vJrPR59xEumP",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a private vehicle transfer from Kuala Lumpur Airport to the Petronas Twin Tower for 5 passengers, leaving on 2026-02-06 at 12:00. You'll have no luggage and would like to pay in MYR. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754830011.54318
+        },
+        {
+          "invocation_id": "e-13a4724f-221b-4c0e-96db-da2112d5292e",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm sorry, I was unable to find any airport transfer offers for your search. Please try a different address or date.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-656bf050-be27-48b5-8b47-78a7dd6b8995",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754830018.487871
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": "",
+          "year": ""
+        }
+      },
+      "creation_timestamp": 1754830049.5017374
+    },
+    {
+      "eval_id": "case08fcd8_run3",
+      "conversation": [
+        {
+          "invocation_id": "e-ecf7f5a5-f312-4533-880c-b13eb06fc92d",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Find me a pet-friendly hotel in New York with a king-size bed for a two-night stay."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CvcGAVSoXO5uOabg1RH5lIb3aUpSr-G0RylqCZpSCbN0mMaGSOtAYe9eA0kGTN85GVcgGo6psLewgMg2j1J-d9kypYwhhgDKEYQIaCmjWtCao2VXrimckpELhkVX5EwQJjeOTa-SatenD4wzvGy0Ovm8LU2bM7G5XSK-RRFgOQucJPts1USpDUzzhT5uLI31PjLEYq9XiEbzVwilSW45nhCwGwtI1s1IRD3End_jkXfBBDVLJT6wsazdfcUO7lQczoS8pW-K4IRKznug74h8LCr5WDxERJ7-_L5bqvaxNFBgAmwPLRbm9VFkckKIRaakMOuqX-GtiG-tjTt6n9NjCqAQQDU8wQ8bRqhCKmeWjB8PQxcFgsR0Kap-FEZg2a8_1ms3Q4XbHxWVIkxOgL_RS9zgvG59KUGre1TmJ-S7X_1baLgT-75xL9iG9vEEiv1OMELpv2vSogLnyquXdxeAA0dWX5oAlDX8SPATS1wf9dqk9kirLF9y6ddnj5UFtW8lfwCBGf5pZbZD_HWQRt1xgLY1ZWQ0kBZ7mjuIo2H9YaUCyi_wyzF_UcNfbmaLmtVdVnd48ncI1OAUh5L6FPsF-1uOyZ8L-ENepG4VgsV0olxZ2XST4hCAdp22CQtPZXb15yd04OAapYEuUPKZO2MuStFEw0TvsslR3qfWyR3BSqsH9XHPwcV8SdCylOOpprgBtsBUyk-6T5XIfSJ-qSSKzOgLu-1EANzbsMdfKlZseNV2TXDAdApbdGgawhbff3ZSAwcDRYkdXbzscSX1dmARdaF44nbVdlm9cs1RLuo6fhHKUxdX4U8FkeGAkl0OsWFPviiEy_O8kcIBj7qmvifKKdhQOlvG8DOfWL3F5mgcnK-Qbz_gMRVPDaljoXbi0i48unb9eCNqrYofLwmWapBnZnzlglE9zVczPMqgqjW25y-CeV_bOQ25cskInQCrRTJdzD-y55_OFegU_zStH8_OCoJ2HWgT42ZyCY61Je_h7ry6bKPSoY37s_skiXrDhLPgrahWg4r4yfbvwRMMXpi5ZNLZbvJY_iNHSfZwf7pJ4w0wzUVHrGdGih5e-iX2PZ86d-zeONEVAqwdH4e7P3KOFXawtIuwHiz4n_VHVENC0y5IZFOw7_XU9fKt6ARqEQBU4WkdZTvmyph5UnUqMYteVWm_lDixfYhmOAw=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Great! I can certainly help you find a pet-friendly hotel in New York with a king-size bed.\n\nTo proceed with the search, I'll need a few more details:\n\n*   Could you please provide the specific address or area in New York where you'd like to search for the hotel?\n*   What are your desired check-in and check-out dates?\n*   And finally, how many adults will be staying?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-9c4bfeac-1302-42cb-806d-b8280f91cd0e",
+                "args": {
+                  "agent_name": "hotel_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944642.077172
+        },
+        {
+          "invocation_id": "e-c78cbda4-0301-446a-be94-03b193b55342",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "15 aug to 17 aug, 2 adults, 1 room, anywhere as long as it's pet-friendly,\n\n"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "Cu8JAVSoXO7pyZdHKkezLZ0GInkKsxk0kXpOhOYPbq1e55nBUcKhqESjHT6NewbjTJqZBlZd-btNGiacJ6imKaNtmWGbd9YHKZB_PVdTgxPsgnUfcZqd4nx7JcVYYurN9x8I8LB02UxZF2DgUFdR1Y6syD_CHkxdHycGCN-c7naLccLpiMcVBPZeNII0MCovsDrsxhEchZLpVqZ6DxJF7xhprx42a8maKhZUIjHlT9K_dAwsp8dndeXrzAZFWvsqHYyNgy8BZvyDrnccOc932Kw_zOFza0KWJS906hvlowGYbEE2OOKZClX-hqinGV8yRepe7-3kynTdisMpEJYAofEu1nZvk-oSpyZXTUsNLPIHIu5TUEZo_J1wk0H94XgmSDuv6dSiox2MbL2hoZwHWNp-rraw-uZ26qpwRygpwD3aS_8VDGzMME9inAAcvwzd70mCQMfftvunYbmpNZha9AOPLiN8OAmTdvOb_7LZxuicMLgBt3TNX5K5tOO1C5vCT9aWpfDDnNnqE3zTpa5P8nu1wr9eKVlNHquon6epKtA2w85JgK_y6SgO3uX_G4Pm8bWHevcY-0jQNIZRbB3zemDBkz1YE6oEmLXzP3nMq6JWbTzoM8RAv8KbFtDukS7Fp11vBN81ZsIb7zWHrL2dHVzqj5z3eJj7VEh2ORE0KCLSGrZMrqt1apIz8EGqniIKpx99u43jxPilhKiw2wbRLATzJyw7oXCl5aFox03oZFPgXMV6hdYFtchPoME92-9YS3icXBDHYusTC6hKXwslGcaAllqFvyxHfZGXzeLbInowDw0PT9Fjc1AJnNBAV5kzzJXk1ypKZB9sq4Exw90RdSs1ARZrqXXHzTDKEjM3veoQ7hg-NK4c2-TqqxgCjWYFJHpKyPSSV9uwPYCcFc_wG4rl35FN1S7wDV6i9yAYCMbJdTF208RNK-rqPO8ORBvXFKFn9ObIM3wALG4gi0wXpPRVi43ef75DH1FKZ3zdoUjOfbst32TtAR-YCFpK6Za7VXRh8sX-5tpE1y_cl1bm_jbyc-s6R5QeSffZ0_HM2ZNjbjflVXk1YVfbKleEa_Okv_poz5j8YmJCkAt8OB9Qak14mXPpDIdY7D04_9CDxY8hKKNiJGQ0sqs_jAEBoh8H0lUBl_ZPKly3sBeXnAPK-_1DI6v3Xb2g3-HbUoGgyMAJfOca0pV-nGo1zrLqxSd9wgxmRdiFJgMaJ6XMEIF9-kP9jkycu2ofeaa98V9lF8gCq3JW0wd5_C4s3p9_I_TB35v6zu2Isf4v7KqT-ZFx1mNNCLlFtzFzMhObQJBzMWwbaApB7eTfEQBBrSPk8QPUNxy10fwdGJP3FaaFPzt82caVZ5UQIyXXQEORIOE-AJpT_S6HbT_A_d5JrVz5mCMd4djZiFgbZ1_OKGqXLPLBBtPZTk8SuvymX92uQwOLkFD2xWK5406xfaj6X3tTQ5BLp-ksU2-ygE0j-_6o1EO-CDqHTcvaqT5w5rOB4FNdsl3U3sfXubM_-9R_EchRU-Y7pZloIvaK8gm_r4t8At1cAh3M-ptkhQsfIWNgiFxaFxcX7-S1i8hzHJR0yTr0LSLXsymwci_7YchE4HIEVeC9KOH0I_tYVxOWCZ1yqFs_Xbpv09K4hmDkudGV88ILlKgOmMlJeS61gTp_S7tE9pynd9pY",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Got it! So, you're looking for a pet-friendly hotel in New York with a king-size bed for 2 adults, for two nights from August 15th to August 17th, 2025, and you prefer 1 room.\n\nFor the search, I do need a specific address or a more defined area within New York. Could you please provide a street, a specific neighborhood, or a borough you have in mind? If you don't have a preference, I can suggest searching in a popular area like Times Square or Midtown.\n\nOnce we have that, I'll confirm all the details before searching for offers for you!"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944675.091106
+        },
+        {
+          "invocation_id": "e-77edac95-ec99-45a8-8f2b-d2cd5add1466",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "no preferences"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CvUQAVSoXO6vjkvHZvmm-2rXeNaBzgQ2BBzrMlMJKOKiZYaS-t_8Ch7MLD9XQC-5ibgR9j7CC_1aCZ5_TLI8vAAIc0VdAuBrMtIbADLee8P4nycE7FoduHyyJW0n2Q9cmV88GhpVpNTPSaGDE3c0t25qEo7xkCpzC5W6By3oiluxC7C-3r12qL1wAgif9t5nJ6YsQOQBn3buX9Xz2ohDLOjvo0oIUtjKmPDt1gL-SOI-P7u-iJQYsdUbeew212TbqjMKKpyNZ1JkrJ3KPChzhjFA_B19I81g6axeMc0yAD76odlG78ljiEzzlL66L4ui5HcbQgMNyASQVX-fJuvR9Ipw0sH_SUwbAjfILl40E_67QEE6-OFQrK735TiFTYctezpHxTN5_7l0PdfDIerBy60peXFSoA_DMWh4cWsuAYnGCGVMyM6VLPPb9uLkTwRGA-A7C7KvmT4Mh3f1NyXKFnrtLxaTKKD5CISN6-OIvFtrfClCn_eGDIFxv6skTyIir7XE1q8Ao9ODTHTUQCSWX-JaHvXwVI51pJ_pOnmRuBBckpD3_T-NPuFbkyLL5-QecQmRyuM8sXegMvPNY0bDS7dVN4wFpTHuUBhuvLilBJljNk_o6P2pfXMKqDid5Q-GlWha1DKZWHGiLqtbL-0wmHpB2sYc_iOblsSyLeM3GJqdmmJ0IhTY9MPbgXYxj2cgD77ZVf5IvUiCJNTsfCn7CxyUDi5IiwtEsXeJE0cnmmSPURNM_8nezYrnLltjWCgK-9Kt7AqsNWlcU7zMyOXeuCB4u1ybnhl9RR7z69tlnRYQ9B-pBMjVU15uqSeJSnQ0vW_ulB755K3ZhypnnQgiulGlsWnz-qVJQ2BOpcQ8OhYPs-D36LlJeqH2jquNY6g612HXLO84DYLMECihNWitHyVFHR_gH7WR6iHh2bQ7ZKAe_fg11uJOni419x_Z2IqmFqwvcuQsCILPanXy87EcPz4rnEGrLFVyJNuH-yL5vvNwX71A7xmJ09O7HK88q-OCxBxUjj1HHdHycBygLlMHIMU40EC35_Ti5BdLbG8-8et7QmkpDXWCdBCWXKQhd7BL5_UqnwR9YzllX_HDw9tQh-5cI8fiJbBYVniRIhWD8921FgJWdVH939aM3MdRBGUWdwl-2HCAjaSFKbb0sCBfIgPz8kQ6pqegmDCdhsJvUam7EX42pg7yF-5ZAbP0K-m2vQGzMb7ZKD6Hjkv40EzOjprSvBpNHZJI7BsnbCJx69z5e-NjUryBhyNDW-soMVg_1zDN8HHWfsrsHhJkwE32XIDMyyHVrQpduIBUMEFmFj0Vg_2ZrB99MUTHSoYMZmrg14HT4vEKMxRkt8IzAdGzPu27WNU1OrECpITa6dD44H3d2juTNnqV9zgB39JKh8h-c_8u2pnQwA3CFVFZMV5zShVMIg2pU6udqQW1jIMicdykGewf5veQDSMJjH6ydd75b2oBQrMFE4D0LLpT96B8o7EOc-eRzNQhNiYdtO42Kd8ewnssXiXBc_N7KknD6AH-KXZ9A8y5xGveXhl2poj9g_0DSH0PogGxd9Co3HQALl1A9A4TgWBJ49nMZU_63dbglT_YVyTSjRCvQH5aP2sTYyWjiEnSjdODOzmKcXJhfSaswzZdRS0nPPZiRN-Wflq7MnBgkr9nlrywQgQumZai0fFSJjQcD8RVXFlWWrKwrB7bILTPcRDaRl1c6-MD01yLy0rG8Xdxw5XJ4mrBhZ3h3YAb1wyMvLxZjy1n4p7_VysQbpibdg9b8KXgnAqPj2r08aYd9Vaq2Zit3C9YsELab-E3VLYdeFvbmokkC-5Fg4GGPI7NlSNBJlyptGWS6Qq1E6ZCJxqx4Flb84Sw3o3LGumPkQ5PHycZvlM0168z5Bo2oKHKQJdNhOZZzLqJKJgAbRH7Juz--b4FSTcdrjX9ngel17xdmIm4E7wyUBNU4GvchANke6IjABXr8FGDauBqMi5W00x8SVzOjCQ9tYC5X6K8G0vFY8rBx43z1LhsZ4FqdGuF7a2YDpFmUohgf4OTsYef8SzLixKsoElmjGHSNIZ5lAZOca2Rcy-goAUSz08sbw9aIxQpIa5KAaD-MqHh9vA2f2gWSt0TEVUbktVOlb4fvoRlclrqePMr0rdx5Q1VVm0b1xBR_WUOor5q2gqibUCd9JG7mrjSQQf7-_tz5UwcuYUTMD65Dw_rmdKqfaAfo3VA7RfFHGuWxbchKtwx_SAeeaA7t5090LW2P8aiwZrEl8PJEu5GsUiA3aIQUeCuyxwbG5a0UdGfum9jN0K8ZZ_iWnL2rX8-_K8ERTe5NvgcusYfQf7aPwZGG1L9OUSjsMNM6K6BWFKhiCx2NjseXCDqosCFXvk3GWDpcTg2Lzesto2ZXgO34GPUr6MAmSPIFtElRLCs3xr512sl7_N0ls38Rme_08P6bjvlVJUH1_yeKc2U4eTPjGpLDJ8pMNFNCDJskdNjejW2uu7m-DzhBn1ZOfEwAzhbYVyWnUjP0vhR2FdQ0UPxipCTOXwRBaN-XxmAbWvhRrF5cjFNgIf5f-P1AbDVSBxPN_w3rsUfrhd7DGg1k3_CEQXEg0rSuusi-lM0LZEz1DPDM_-cjTrr5PxWQ2to_obXMNX4ojfCWG-J93LtUY5VCRCnLjLL632gD9NwCMQFTMBoaWOb46d4tJaZQH65pUmPeGl_ffE7mEQLUGakgAGoTfGZJnmEhhNjxdm0wGfMnbJ_XQVM7DJplrD2cUqmscORC9DYpB3R0fqH5Bsb3dVTNDbNEAeHhr7MT0JvRBWIvV63UOgox7qL6pqqrAfy8HVJe6BjsqaVyjq0a1g3HJzIjPYxNnNmhF4YPNP6fBZRiNaKISFWc9VuGoZF_LkvC4w=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, no problem at all! Since you have no specific address preference, I'll search for pet-friendly hotels in a general central area of New York City, such as Manhattan.\n\nBefore we proceed, could you let me know if you have a preferred currency for the prices? Or do you have no preference for this?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944693.753142
+        },
+        {
+          "invocation_id": "e-027249b2-ee1d-4c32-b015-0a5011744451",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "no preferences"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CpkEAVSoXO7sWQd27dGmShDzPdWxNaXb5gbOJlv-VeR_HZoh3q0j1UsXDx9jtXIysvW-oQiGs52qax_I7mApoA96y1_pGlvGxkOJ6sR0Vuodlm3EvRHg8DJhuvyxJPMTaFmWZl8RlP2B7teQoL1ea3GJpDi0Z-vFahQInbiMvGC9lhZC5moZ0ma2-0JrU3cSYdj25Q4sXA0G2AVzyVyTIvToeEREqb4l-MaUIpDHuiMC26Fcuqh-f6fmZPiKBLt5J0dVhW4xiQmAIEpuhJap7FKnHJZ4LPnLHHwUVQDso1TmKI3dDthtiT-ZEgw6F3OK7MKmLXsTqcvDc3x8jVU3k6nLlbyVpwyhFzHUj3Nd9HYhwHtbGtEwIm3uikRV7oYXvarCm5KJnrlE3QgSVi1rv-ciGNbBzoKvECggejbyDc6kxWeWGP-qUvlPXFPMpRb97ND3Ip74mzM3xrBSiQ5rwEfTV-qJL9S6H867Fv6VkCY03aSWHFoNCtdKSraI1dBVPKkYC2R38rIkHMHy32AElTgjMqW-0Y5pxsNjOFwpvNhoOTDcrqv2uLvfFUKUtXRejiBEBX3yWKbILhkCrrndPtG_gFJ-8Esz9KPqCriFMIkRtJ7eM3EDKKmNYRD-0IJ4H1eRd27oqIUlQ9A8oeqABY-XvDVUW1KHpmiuu0qyGMuTvBMoAr9DPyIaMGzSCLlS5GluvlcIkE6pXvtk",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a pet-friendly hotel in New York (specifically Manhattan) with a king-size bed for 2 adults, checking in on August 15, 2025, and checking out on August 17, 2025. You also prefer 1 room and have no preference for the currency.\n\nDoes that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944703.326072
+        },
+        {
+          "invocation_id": "e-dc1a0348-f7bf-4f63-ade4-32e58e060dbe",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the hotel offers for your search query:\n\n*   **City:** New York City\n*   **Check-in Date:** 2025-08-15\n*   **Check-out Date:** 2025-08-17\n*   **Occupants:** 2\n*   **Pet-Friendly:** True\n*   **Room Preference:** King-size bed\n\nHere are the available hotel offers that matches your preferences:\n\n*   **The Westin New York Grand Central** [Hotel, Standard Room, 624.36 (USD)]. This hotel offers a traditional King Room with 1 King bed and a living/sitting area. Wireless internet is available for a fee. Please note that this is a non-refundable, non-cancellable, and non-changeable rate. Check-in date is 2025-08-15 and check-out date is 2025-08-17.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-034b55b1-f3c4-4673-9221-eae37b2552cf",
+                "args": {
+                  "agent_name": "hotel_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944711.160672
+        },
+        {
+          "invocation_id": "e-c896a9a9-e839-4c66-9d40-d853c83aab5a",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "is this hotel pet friendly"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CtIFAVSoXO5k6jGJJ9ghoc_WH1ZARBtzMnPfb9zJxhdwB-GdJk6Gc3KpSnZMsDE_fybIxN7mIWMQTMqSTzoKISoNqaAUaRQGe_-GSVHx1Ht58EJJirAGj-x5wNFQP_VvDj_4wMH_HjxdHgiPRN3gQJHdBohHv4Zjk8yj6wa3BClsUD2NOCkcWYV9ksJud7k8p6F5eOfku1ws-GAKtDqBt3uDUHRgfqabLtrZpVok0PuqapVjM4J2-9v8VXcWdvRkOtEdB_dDpV6wa5615QfGVSBN1Bl0fFKuga-qZ16w4WvuZSz2Q5lAZp93wiVOVPUkGAEe11Acgkh3S6PpRp92flMyZ-HbixZG9T1a2eEZ1POZOZpL-WM0yzVINkghZw9M9e5l5z4bAlYSQD5FIWbZ9hscB8zwnoco7HGL0_3ORGQE7QqVM11fa0dhjGHZwvmlyWn66uRDk4NF9Xqr_yX7GsFuRLs0PTa0JmtAmKQtBOpe2NXFqYOkmT2GaFEFZXXvWIe2L09nchRmNGVI8e1VZy-Lffj7ObLNjFNk5PjjPhsuOv3O_9pvj1HeyOoJbrN2pH3OM8E9YfMzV47q9dggNVB0682RNYjewkYprM4RU4KOtp_LnixIwFq6Uh94JLqyxuVN_g98Ra9B8kg8fF79__BouK0lWwy6XPEh7n31dtMlzGAOq6ocMJh2Ihq5a0zwS6sXAIA1k1k55jSIglilegcW0ygrePnzYQUyr3a1Ai5l03Raqisk5wVJi5g-uubfI7GTE55-QGQVP-kTIU1cq5OqvFV4qlBD2exATtUSDJDy2usB7N1vFB-j7K9aew95T_uffyofxMzF2db8NACNU0eEuldagNKaIRENb8Xf-vyJ6nBydZiZ1Icp9YC20pyifJ-aloAT69owTZQ0lCb3sqLiN2kcHtp4scodD8wreyX6DCN0kBiwgc-9ZRYvzzkwx1N4F0w=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes, The Westin New York Grand Central is pet-friendly. It was included in the search results because it matches your preference for a pet-friendly hotel."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944849.252172
+        },
+        {
+          "invocation_id": "e-b1c42984-e244-4ad9-a078-76dfee2c3b28",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "How do I get from Changi Airport Terminal 2 to Marina Bay Sands?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CtQFAVSoXO5dENHdO-RuwCpl4OnEzm00E-BDzdImIeJfq4Qysm1fQenaxM0H8A9V0vg8pGPjFi6ajnolqYFHJTE-2XNZRrObG1aimQSEwbEOuyfokughEZVWU81OgvLilZURJuHlqhM4WQbM_rgtYa3qOKWyhEILwwRDbvE5EtC1hBz8Em0DV3ggx_nJNmgm0Y0A3BGy8WwRJAtjjlUU18pAckd45yzq_RLgKFDeBaD5YtCFnM16SduX5_VMuqBWsjd_Rd-1VzOSH97bYschpCxQ4LE3NaYP40F_HVSa29yW3kLklo8ZeYpWlcE4T9rnLyTwLkk-jp8f2WwxH1OrVN_9M_axUKQA2-_ojAmAEALHa7iPELDXfb-JJzsM6FdSacaY5IeOj54JkQ6mxvF41hpWG36XTu1To3kh7IxFLSe2GhHwYv8Rziy4n-cnuwcb1H6SR-vuKUkJ-Dtavyyzml6VCKR_2iFOEFUYrYtA9PQb7asKufl125Xrqa-2-F1u-Xm8zlP03KqksqpBiBAH3lP-GGFrnCmik5dNW9Xi9KXBNeiitAj_c9cuUywzZscQyJAvNnMCHP1A7iEBGgkjDGFXqE721GptWYz7LeNKTQEo7d4ubnlHOsq4Zf-_bdjc4-pwF4InA1PnaVG1NJF3E_75G1Vqd90ic7avbS1ggUCa4fqHTZHiohKU4HesFbod7fW6M9ObNnz3tskR8C8x9d0yQShFRWgAWDbsnxw-YjY5tpmmchONMt7k4ln4I6-_xpkiWB_HlKbq_5rmQhZx9NSRjhML17sK3E6Ly_xvdjFlBt4sx2_roKc3sB-SdNKQucGgoiqlOnharCYTEOq_4DIankG29wDdIiWaIwLD8DjrGH8nC8BcPe8D1pt2Ajs7U_cOq8_g8KHuTZYbP_eECPzbc43HOyYIMGVRuIO1nMIsll4NZqdg66Z16wcR9KEY_OpyOQ06oA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can help you with private hire vehicle offers. To assist you, I'll need a few more details:\n\n*   What is your desired departure date and time from Changi Airport Terminal 2?\n*   How many passengers will be traveling?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-4b1b2502-3701-4633-b575-974a7d63d447",
+                "args": {
+                  "agent_name": "transfer_offers_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944900.340455
+        },
+        {
+          "invocation_id": "e-d795168e-7e3e-44b9-9b51-d223d0f0dfd7",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "aug 16, 12am, 3 adults and 2 children"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CuoHAVSoXO7mNw-4GR5P_sGsmFWiXvFAGQ9P4NYg3QNyxfvJ5YnPHyziPH03THv8n28IpNXmZw6V6wz3N_1R6pY1myqzSAu3PF2e3aL-Hjfjr0Kao_AQ5ropXMbdFDtiS03tzE3udnoHWcN1XWSl5NwgM2eZ3IFACw7WOJaRrtwwGe_3ZvmPRFNzULnk4WGsXAi5R1VlbgzKBgbhbr5bFfGOt52_fpVGMG0QVM_8lWKCciq7L4VpCbvTsJ9vrm8DvBJEM84MX1GBi-mY3CWdWNtGX4-vK7hGYYAMhoKcSMtv-uq6SZu4ttcbPnee9Ix8D3TD18HYWL7ZShgGwH3fFUEA6MA6KC7IVXeAA3AmV_BKY9pfvoTJ2VNnff92jJQfUS-Z_MdN6XO3R4F1aV5iiiXAwsuA3GoWcjTcpJpo9mWzCONICllZVcq1Y7SSjHDXnqMPkcfK7cuxuoc5KkaJlTRn1yp4c605VfbpAV_IUnqJyyhVFlODz0wD4N43QWfRz9K2XP_so1TUjm-oOvaQ2ngb9uS7-Y9iqvTnkYJbn3LWwR6BInhHJrbSTGsnjIgazfEpvwHfhCQCVZpmTnbtMC1QiAVZ9g6MeAK78G61QhGiluhmxstWxo0eMuStVEtiwj7AgDAdFS2PtC-Qztpf0AmurU8oYgNsrJ5qS0Y5OsWuOX8rXAU3rg_vevzGkkYvCNUeNwkef7dEKkii7CxsMIXHbrkJT-1oOXDmD6nIUjCcPA-tW4zcqlzaACjOaBh1Pg7ROUxTjawgSMV7BfLucPCFW3FXdcjJm_Ouvfp-pQw3pGNYvQJOnqFmVX6xwpCPAeF7X0jgVlJxoGwZSD147uVy8y-NuAC5qhVYRRH0g6qjGOosGPLAyMz5qzJekDQqT24ymJyl9CjfVB4IjCD_UK8j8EA5bnqplhWYLfczAQXcfuTqAs3F5gX9kbbW_C7LhHBAy0JfajDrw2MSxGtWFlopR5xFq5THJMweLGxdQrCKxuvYhCfL6SrUG6xPSKqY5aQg63Zg1rMiqARU_SikQ1FMRH8DnKxjJHEEfz-jx_YgKJkmInUNRU3o0u8O539aktmZ13D__ZL6bVdtT0mpmMDJWgcq_1m3_PdXgfL6HIpjuyFHkQZqCWo2JqvujfuYWf8czEGFt2a9UeZAhUTmidpBQRIgOtKTPTUEIarO-Ue1nEfjF70ru6VELvz9lcuN48dWbXiKJUvbpxCUQiL0ozb8LxS2LAGyhVs68yYvwHemEfP8GL1g6iTB1ldRYjL71oyEhdJxefRWJ2qY8Dvtzsz9_TFOaXjNdMfXvc7Tyg4HJaz8D-OL5iZnbqMW",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to confirm, you're looking for a private vehicle transfer from Changi Airport Terminal 2 to Marina Bay Sands for 5 passengers (3 adults and 2 children), leaving on August 16, 2025, at 12:00 AM. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944915.737444
+        },
+        {
+          "invocation_id": "e-f0c1e0e2-b18e-4111-a23b-b9f9eb298f43",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CqwFAVSoXO6wiU5aIwQ4Wy31bDTqDLynQBql3ZtL58kLgnnOufCuVqVREaMwLjN3EQpfA9wiYU62A9Ms_MPmTeIr_9XCpDiLvAi0mRJ6ETW-06ECaEsz_mx5Bmlzq1RYrIROTtZcn__PHog-EsG8WJ3gxhuPnnKCsX-gjB7ME1CZ1AJ-Zy9TwvsWHq5zAN_fVAZGfrc4UjhoZNTFRQAnMYK-4_S-Lc8FCe6aO-lpr6fHNsVOUGxWW6I-o96zE3-bj3CwHtkQsWOG6zgb6oit7_3CXBG3WiDozeyxNu9hk9Mi8Ta5Sins8lsq02cadZimCrNCeJ2xk4abgEYSKJPkZcLbANALudfeIJafPbv2vF-VBZLu98SlEqkZBRZdReC7h2Wf8PUdFmpE37Hc0WT663VLo16e8L1wZdV2ZKssR9My44lAdQ6E4U02TVbrETd5wRPxijodSRF6nUWwYTLZ-ZOXxZeCBQzexSCUNCmZge4HYK27DHLi9OXqF5qNdO6ERtOVizLL6cAQzCNIH65n9IpRqJDCcJkXJr9-wcBZuW9w6bmiMKLvrVBQVoGAre8jOxyUTVslGyHaXa3z-Qq-fu-reXppaiNX7N40CZ3l-SNV9W_ZxQiIDV5AmEHurHW0gLj_tItTM0spBbsawkfeG8oi5Tt4pO22JagVrGckw3Rr7h1MMh7b_TDDNuDsMZdDmqj-yyjGq6Im0NBoic4iVv2t3Evqj-UXqQKnatA2fvD-W9vmkkGcbjioqZndtL2G2IvEC0pHrCppmeN9ojLvfmIHOAdz2SzYoHeTmLknalZIUUicOrA_Lm3oX8GfIqwCiccOn3glMKKzw97oPorPpRH0CqHxomfW8B4rtWW-jkcc_02Qhzz5V33eQDZBg-NO6AB7XqdOTn9vfh9Km3qm",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "To help me find the best transfer options for you, could you please tell me your preferred currency and any personal preferences you have, such as your baggage needs or a preferred type of vehicle? If you don't have a preference, that's perfectly fine."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944926.668885
+        },
+        {
+          "invocation_id": "e-d6ceae33-c678-41fd-8f54-8e5908615404",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "3 luggages as well, pay in SGD"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CrQEAVSoXO4X7Lcb9idZKI2B-XXB3svhxX9I51VVZHSFY3d7cgoiusKd40KDDWns4r6ZNqIa2ppskKMSMKVTdrEsD-aIzTtTGmNr1dMTTzkWHzclQ45olBUt-YIr_bFw9xY65OJ-tv8Jj6QGOy8Qabd3nohJ9YnLxUS_w90go93BZx5lLjiQak-wHhVRzNjV8bh_kzaqX-uefLWwVOz9zCgo2kOywy0crINsEPj9qVbk8BqQImggnaZYpO-hleC3Fp1GENxCOlfSB93ILJPw7J9wwtwnBDBpaXBFoWpRg95RbPvenc0Y0sWBpkwEXmKZJvRTtV3zQC-02owN5lKzyYYhbYFKhLQNgD8vI96Tv727L5TBayscBWPKRth10XCRmPAtkyho25c6W3imTbIGHjTgG5T0T2aptAEpr1Pz7V3jub-C4_oKh7F_zsaRoHjLHzKPb0fyu0DkKYAZSIk79fNc6QpYXvuJiHRwOd32eRAWlPXnvkPKJwtQPbvpytRQHtPjIEtVOiMWbnzfh5AhGiyufgWndqS6gfjRsqh_UMxAo2xr9r71i4jjQkK0zcEjbPScuQq_-N7Rce6w-eYVbMbsEVTxLhRf0aOZgE1Uum-gd0zuaZPo2XCSVABeXcgdvQtBjx1SI9eP4VHCCuUV-TLN9Kui47kP5oUxhPLCLvRe-gJyUM7NA35IbcOHS663mMV2TUpqbHnoGRcEjeTtbcUvJAkvOl83v8wWKMNZF6OUdF_mE-tS",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a private vehicle transfer from Changi Airport Terminal 2 to Marina Bay Sands for 5 passengers (3 adults and 2 children) with 3 luggages, leaving on August 16, 2025, at 12:00 AM, and you'd like to pay in SGD. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944935.252361
+        },
+        {
+          "invocation_id": "e-e2240da5-3526-42e2-b20c-ab7891a62616",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm sorry, I was unable to find any airport transfer offers for your search. Please try a different address or date.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-2167cc70-1ce2-44c6-8d4c-d9ef1310f616",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754944941.486633
+        },
+        {
+          "invocation_id": "e-5aba4f8f-757f-4ef2-8f80-c9fa3db3e42c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "60 Airport Blvd., Singapore 819643"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CssFAVSoXO7JqdMBdNrTqSq2FyMEGyKktcRCQRqp2qKQZT2gHrKauEShtqoJG8-zbU2eptVDZaYnCOxtMY4ZVCjclc4UWumWMpS9Lr_lqyi6CFqhGR1fAVwdtR6uPXwYCUGg-QllxnIDXMCLI8Nu9_vDfMZ5U0VZISSuiItbZtb9qKM-_N6hDDHvjlnCxWUavqsT-mneIfi7pTqRID7zqgsczPbZTXYfKlXBoVF7WwkX-mQ2_ec3fHCn3TYIuJqz99l27lt_Es77nbW4PbM0sPEbJ5p3b5O30PvF8hZQV1QQLBGweR6AStP5aQSmAuHNzO_Jfxm_TAOApqQ8jQlF_e5j1TIs0J7Qi86_1Mpmsj5c-wEGsdAayQ82PBLaWdJTPPDK96lbLct3YBM56Z8jPisACevjjoGEIrlRYUJWWNAdH0dSichsDWB4BFvCINEtYln2MCcMnVEWGBvzLIVDQEuz92t_51baFnWnGqyDXgaFdyGjUG_75thRcpCa0QwClsUl7PMPadr8rDUXnMVxhINh74Xgy1-XIZ486lx-NHODCqTPrTcVqvR3KSnXIgRzqKW18g0M5oHqsAJWiw_I7uk7DySguRrSu1wgt_bKo0n1_JBwDIu7gsAWaJbj6RfFMc0Q9LQSv5zMGiV2DdvdyepSUqcDYYfaKMT8LO_oRD41xlnqQ-KNAnzequRXGDppbddDwk41CECo0HeSqf4tckAtOJk2ly9kvEmFOvHZP21dZ2GPJZDuN9gPo7khbd1yOJbwgNlN7166dI5FIKLXzbIEeBQ6qVK-iyFmSCkYOFG0nATbRWwTbrCMhRYSstpPmmtOPg79vsL5c4uaSWcgiz8DdZYkXYfaHjqunMXQAneOVtruylxoGbgJDMgAYjc6vjZhO7ykK5c5dO0eCy36v2e_VoUhGTRe5FZurafAiT85jwR3Z3msGz5qDyCb9w==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a private vehicle transfer from 60 Airport Blvd., Singapore 819643 to Marina Bay Sands for 5 passengers (3 adults and 2 children) with 3 luggages, leaving on August 16, 2025, at 12:00 AM, and you'd like to pay in SGD. Does that sound right?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754945097.941503
+        },
+        {
+          "invocation_id": "e-6bc69f93-f1fb-4ced-a1db-f54edfa6390c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the airport transfer offers I found for you:\n\n*   **Pick-up:** 60 Airport Blvd., Singapore 819643\n*   **Drop-off:** Marina Bay Sands\n*   **Date:** 2025-08-16 00:00\n*   **Passengers:** 5\n\nHere's a summary of the available transfer offers:\n\n*   **Elife**\n    *   60 Airport Blvd., Singapore 819643 to Marina Bay Sands, A 5 seater VAN, Toyota Sienna or Similar, SGD 45.78\n        *   Cancellation: fully refundable prior 24 hrs of pickup-time\n*   **HeyCars**\n    *   60 Airport Blvd., Singapore 819643 to Marina Bay Sands, Hiace or similar, SGD 147.02\n        *   Cancellation: Free cancellation up to 18 hours prior to ride\n*   **Drivania**\n    *   60 Airport Blvd., Singapore 819643 to Marina Bay Sands, Mercedes V Class or similar,or similar, SGD 99.49\n        *   Cancellation: Free cancellation up to 2 hours prior to ride\n\nPlease note that Drivania's original quotation is in USD, the SGD price is converted.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-8910a11d-ca81-4971-a2f8-f7eb8cf3e849",
+                "args": {
+                  "agent_name": "airport_transfer_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754945105.363264
+        },
+        {
+          "invocation_id": "e-63dfb176-05ad-4838-82fa-6f81d6cb2dbc",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "how do I get from changi to mbs"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "You have a few options to get from Changi Airport to Marina Bay Sands:\n\n*   **Taxi:** This is the fastest option, taking about 30-35 minutes and costing around $25.\n*   **Subway (MRT):** This takes about 57 minutes and costs between $2-$5.\n*   **Bus (Line 36):** This is the cheapest option, costing $1-$3 but taking a longer time of about 1 hour and 40 minutes.\n*   **MRT and Bus combined:** This option takes about 70-75 minutes and costs around $2 per person.\n\nI can also help you with private hire vehicle offers, which I have already provided for you."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-b73005d5-f418-4913-9116-fbf14a42af11",
+                "args": {
+                  "query": "how to get from Changi Airport to Marina Bay Sands"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754945266.48555
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": "",
+          "year": ""
+        }
+      },
+      "creation_timestamp": 1754945288.5673308
+    }
+  ],
+  "creation_timestamp": 1754783782.2618742
+}
