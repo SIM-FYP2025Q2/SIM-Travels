@@ -68,13 +68,8 @@ if (isset($_GET['q'])) {
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="admin.php">Knowledge Base</a>
-          </li>
-          <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1): ?>
-          <li class="nav-item">
             <a class="nav-link active" href="admin.php">User Management</a>
           </li>
-          <?php endif; ?>
         </ul>
       </div>
 
