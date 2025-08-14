@@ -32,6 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
     isset($_POST['password'])
 ) {
 
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
     // Check if admin is logged in
     if (!isset($_SESSION['IS_LOGGED_IN']) || !isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
         echo json_encode(['success' => false, 'message' => 'Unauthorized access.']);
@@ -47,9 +51,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
 
     // Instantiate Controller and create user
     $registerController = new RegisterController();
-    $response = $registerController->createUserAccount($username, $password, $email);
+    $status = $registerController->createUserAccount($username, $password, $email);
 
-    header('Content-Type: application/json');
-    echo json_encode($response);
+    if ($status) {
+        header('Content-Type: application/json');
+        echo json_encode(['success' => true, 'message' => 'User account created successfully.']);
+        exit();
+    } else {
+        header('Content-Type: application/json');
+        echo json_encode(['success' => false, 'message' => 'Failed to create user account.']);
+        exit();
+    }
+
     exit();
 }
