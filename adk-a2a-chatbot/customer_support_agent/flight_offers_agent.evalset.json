@@ -1,0 +1,1485 @@
+{
+  "eval_set_id": "flight_offers_agent",
+  "name": "flight_offers_agent",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "case59a86a",
+      "conversation": [
+        {
+          "invocation_id": "e-601af380-313b-4086-8352-c1d8496f534f",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Hello!"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Hello! I'm SIM Travels AI Assistant. How can I help you today?"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771773.482479
+        },
+        {
+          "invocation_id": "e-5e3cd274-30eb-4a7e-8808-74455b5e3d43",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What can you do?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can help you with information about flights, hotels, and airport transfers. I can also assist with trip planning and answer general frequently asked questions about SIM Travels. If you need to retrieve information about an existing booking, I can help with that too. However, I cannot make or amend bookings myself. For booking-related actions, please visit our booking page at https://bookings.simtravels.com."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771776.070253
+        },
+        {
+          "invocation_id": "e-98de0eeb-2e48-4d44-afb9-6ebccf2ea2a5",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can you suggest flights from Singapore to Tokyo for early December?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that! To find the best flights from Singapore to Tokyo in early December, I need a little more information. Could you please tell me:\n\n*   What date in early December would you like to depart?\n*   How many adults will be travelling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-16607e4e-3d45-4fe5-9337-6f083a67820a",
+                "args": {
+                  "agent_name": "flight_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771789.696781
+        },
+        {
+          "invocation_id": "e-808b416b-4b11-42e3-b940-b71bd001124c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "1 dec to 10 dec, 1 adult, no children, economy class, depart singapore, open to either airport for arrival and no preference for transfer or non-stop flights"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, great! Just to make sure I have all the details right, you're looking for a flight from Singapore (departing from any airport) to Tokyo (arriving at any airport) for one adult, flying economy class, departing on December 1st, 2025, and returning on December 10th, 2025. Is that correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771809.148251
+        },
+        {
+          "invocation_id": "e-ad6c1a88-6b46-4af7-b259-44c306a0e1f2",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "correct"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Excellent! Just one final confirmation: You're looking for a flight from Singapore to Tokyo for 1 adult, departing on December 1st, 2025, and returning on December 10th, 2025. Does that sound right?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771817.84544
+        },
+        {
+          "invocation_id": "e-7ca7b164-3753-4a4c-90e1-c33bc8fed24a",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the flight offers for your trip from Singapore to Tokyo between December 1st and December 10th, 2025:\n\n*   **China Southern Airlines**: Offers flights with one layover in Guangzhou (CAN).\n    *   **Flight 1**: Departs Singapore (SIN) on Dec 1st at 17:50, arrives in Tokyo (NRT) on Dec 2nd at 13:10. The return flight departs Tokyo (NRT) on Dec 10th at 14:30 and arrives in Singapore (SIN) on Dec 11th at 12:30. Price: 518.10 SGD.\n    *   **Flight 2**: Departs Singapore (SIN) on Dec 1st at 17:50, arrives in Tokyo (HND) on Dec 2nd at 13:35. The return flight departs Tokyo (NRT) on Dec 10th at 14:30 and arrives in Singapore (SIN) on Dec 11th at 12:30. Price: 518.10 SGD.\n    *   **Flight 3**: Departs Singapore (SIN) on Dec 1st at 17:50, arrives in Tokyo (NRT) on Dec 2nd at 13:10. The return flight departs Tokyo (HND) on Dec 10th at 15:05 and arrives in Singapore (SIN) on Dec 11th at 12:30. Price: 518.30 SGD.\n    *   **Flight 4**: Departs Singapore (SIN) on Dec 1st at 17:50, arrives in Tokyo (HND) on Dec 2nd at 13:35. The return flight departs Tokyo (HND) on Dec 10th at 15:05 and arrives in Singapore (SIN) on Dec 11th at 12:30. Price: 518.30 SGD.\n*   **VietJet Aviation**: Offers flights with one layover in Ho Chi Minh City (SGN).\n    *   **Flight 5**: Departs Singapore (SIN) on Dec 1st at 13:05, arrives in Tokyo (HND) on Dec 2nd at 01:00. The return flight departs Tokyo (NRT) on Dec 10th at 08:55 and arrives in Singapore (SIN) on Dec 11th at 12:05. Price: 543.10 SGD.\n    *   **Flight 6**: Departs Singapore (SIN) on Dec 1st at 17:00, arrives in Tokyo (NRT) on Dec 2nd at 07:35. The return flight departs Tokyo (NRT) on Dec 10th at 08:55 and arrives in Singapore (SIN) on Dec 11th at 12:05. Price: 543.10 SGD.\n\nPlease note:\n\n*   TYO is a meta IATA code, and can represent either HND (Haneda) or NRT (Narita) airports.\n*   All flights have one layover.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-7d40706f-2e00-41b9-a31a-5e01a18102cd",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771828.766849
+        },
+        {
+          "invocation_id": "e-3d06e9fb-64ce-44a3-a971-56439485552c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What are the layovers?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "To clarify, could you please specify which flight you're interested in knowing the layover details for? For example, are you asking about \"Flight 1 (China Southern Airlines)\" or another specific flight number?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771903.783111
+        },
+        {
+          "invocation_id": "e-79c68184-6c0d-41b2-a4b1-e72898130227",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Flight 3"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, for Flight 3 with China Southern Airlines, the layover is in Guangzhou (CAN). The flight departs Singapore (SIN) on December 1st at 17:50, arrives in Tokyo (NRT) on December 2nd at 13:10. The return flight departs Tokyo (HND) on December 10th at 15:05 and arrives in Singapore (SIN) on December 11th at 12:30. The price is 518.30 SGD.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771916.253701
+        },
+        {
+          "invocation_id": "e-1aae9465-c8d0-46b8-b89b-298e601952e2",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can you tell me more about Flight 6"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Certainly! Let me give you the details for Flight 6 with VietJet Aviation:\n\n*   **Outbound:** Departs Singapore (SIN) on December 1st at 17:00, arrives in Tokyo (NRT) on December 2nd at 07:35. The layover is in Ho Chi Minh City (SGN).\n*   **Return:** Departs Tokyo (NRT) on December 10th at 08:55 and arrives in Singapore (SIN) on December 11th at 12:05. The layover is in Ho Chi Minh City (SGN).\n*   **Price:** 543.10 SGD.\n\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771949.601902
+        },
+        {
+          "invocation_id": "e-16111916-6ba6-4d1e-b9d6-71af31e06649",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What flights are available from Los Angeles to Melbourne for December 2025?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that! To find the best flights from Los Angeles to Melbourne for December 2025, I need a little more information. Could you please tell me:\n\n*   What date in December would you like to depart?\n*   What date in December would you like to return?\n*   How many adults will be travelling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771973.025842
+        },
+        {
+          "invocation_id": "e-e2caac87-8e07-4353-a801-040b0520b999",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "one wasy, 25 dec, 8 adults, 5 kids, no preferences for anything "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can only process a maximum of 9 adult passengers. Could you please confirm the number of adults travelling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754771984.943364
+        },
+        {
+          "invocation_id": "e-201e975f-71a8-4e93-a017-162fe3a36536",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "8"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, great! Just to make sure I have all the details right, you're looking for a one-way flight from Los Angeles to Melbourne for eight adults and five children, departing on December 25th, 2025. Is that correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772036.063816
+        },
+        {
+          "invocation_id": "e-b82dfffb-4a53-4d57-9f39-ac52cf149186",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "There are no flights available from Los Angeles to Melbourne for your specified date. Please try a different route or date.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-b250dded-c825-4193-986e-2f96d9368ae9",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772042.264568
+        },
+        {
+          "invocation_id": "e-6e902151-95f1-4646-9559-1e657e4f5cc3",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Are there flights from Kuala Lumpur to Bali for next summer?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that! To find the best flights from Kuala Lumpur to Bali for next summer, I need a little more information. Could you please tell me:\n\n*   What month next summer would you like to depart?\n*   What date in that month would you like to depart?\n*   What date would you like to return?\n*   How many adults will be travelling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772368.062701
+        },
+        {
+          "invocation_id": "e-102621df-ad57-4912-ba71-e035953f6071",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "9 sept, one way trip, 4 adults, no child, no pref for all"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, great! Just to make sure I have all the details right, you're looking for a one-way flight from Kuala Lumpur to Bali for four adults, departing on September 9th, 2025. Is that correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772391.040753
+        },
+        {
+          "invocation_id": "e-6a0e88b0-6ead-4411-aee0-bff639aca48c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "correct"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the flight offers for your trip from Kuala Lumpur to Bali on September 9th, 2025:\n\n*   **Batik Air Malaysia**: Offers flights with no layovers.\n    *   **Flight 1**: Departs Kuala Lumpur (KUL) on September 9th at 14:00, arrives in Bali (DPS) on September 9th at 17:00. Price: 318.00 SGD.\n    *   **Flight 2**: Departs Kuala Lumpur (KUL) on September 9th at 16:30, arrives in Bali (DPS) on September 9th at 19:40. Price: 318.00 SGD.\n    *   **Flight 3**: Departs Kuala Lumpur (KUL) on September 9th at 17:50, arrives in Bali (DPS) on September 9th at 21:00. Price: 318.00 SGD.\n\nPlease note:\n\n*   All flights have no layovers.\n*   The price is for all 4 adults\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-346ab7fb-49cd-4131-a049-3de2e5d84e03",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772398.162543
+        },
+        {
+          "invocation_id": "e-23403eab-b276-4a84-b6cf-cc21fcfb74d7",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "can you tell me more about flight 3 "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Certainly! Let me give you the details for Flight 3 with Batik Air Malaysia:\n\n*   **Departs:** Kuala Lumpur (KUL) on September 9th at 17:50\n*   **Arrives:** Bali (DPS) on September 9th at 21:00\n*   **Layover:** No layovers (non-stop flight)\n*   **Price:** 318.00 SGD (for all 4 adults)\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772421.887771
+        },
+        {
+          "invocation_id": "e-35a3dee9-a739-4b25-91a6-abce5f619b14",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "any baggage included"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I do not have the ability to see the baggage allowance for each flight. Please visit the airline's website or contact them directly to confirm.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772430.939506
+        },
+        {
+          "invocation_id": "e-2f2fa49f-ebf2-4f42-9c57-921577302ac3",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "what's the airline's website"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "For Batik Air Malaysia, you can visit their website at malindoair.com.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754772441.404843
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": ""
+        }
+      },
+      "creation_timestamp": 1754772563.7052138
+    },
+    {
+      "eval_id": "case461456_run2",
+      "conversation": [
+        {
+          "invocation_id": "e-a1da4274-fbe9-4db9-a315-11904ac88776",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can you suggest flights from Singapore to Tokyo for early December?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that. First, could you please specify the exact departure date in early December and the number of adults traveling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-ab048d96-37dd-49bd-932a-8e2db6e0f1f8",
+                "args": {
+                  "agent_name": "flight_query_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829205.191946
+        },
+        {
+          "invocation_id": "e-1c1ed2e9-b0f2-4c30-b939-c376a32feea8",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "1 adults, flexible"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Understood. To proceed, I need a specific departure date, even if it's just an approximate one. Also, can you tell me which year you're planning to travel?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829216.187871
+        },
+        {
+          "invocation_id": "e-913e745d-b373-4218-93f3-b977b5e75249",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "2024 around December 10 to 20"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I am only able to book for future dates. Please provide me with the date in the future\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829242.078964
+        },
+        {
+          "invocation_id": "e-211cd1f9-e04c-4a5a-837d-35e3729cc8da",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "2025"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, so you're looking for flights from Singapore to Tokyo for one adult, with a departure date between December 10th and 20th, 2025. Is that correct?\n\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829247.624356
+        },
+        {
+          "invocation_id": "e-6466416b-3504-49fc-b83e-938de406d673",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Are you planning a return trip as well? If so, please provide the return date. Also, would you like to specify the number of children or infants, your preferred travel class (e.g., Economy, Business), whether you prefer non-stop flights, or your preferred currency?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829254.271214
+        },
+        {
+          "invocation_id": "e-5493c2d1-12d2-410c-8c3f-bb4a91edbfd8",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "No"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a one-way flight from Singapore to Tokyo for one adult, leaving between December 10th and 20th, 2025. Does that sound right?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829271.737065
+        },
+        {
+          "invocation_id": "e-bc08df9f-416b-4cb3-8c0c-580cc00e2d04",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the flight offers for your search query:\n\n*   **Origin:** Singapore (SIN)\n*   **Destination:** Tokyo (TYO)\n*   **Departure Date:** 2025-12-15\n*   **Adults:** 1\n\nWe have a few options for you with the following details:\n\n**Flight 1:**\n\n*   **Airline:** VietJet Aviation (VJ)\n*   **Flight Number:** VJ812 / VJ820\n*   **Departure Time:** 2025-12-15 13:05\n*   **Arrival Time:** 2025-12-16 01:00\n*   **Price:** 280.60 SGD\n\n**Flight 2:**\n\n*   **Airline:** VietJet Aviation (VJ)\n*   **Flight Number:** VJ814 / VJ822\n*   **Departure Time:** 2025-12-15 17:00\n*   **Arrival Time:** 2025-12-16 07:35\n*   **Price:** 280.60 SGD\n\n**Flight 3:**\n\n*   **Airline:** VietJet Aviation (VJ)\n*   **Flight Number:** VJ812 / VJ822\n*   **Departure Time:** 2025-12-15 13:05\n*   **Arrival Time:** 2025-12-16 07:35\n*   **Price:** 280.60 SGD\n\nPlease note that these prices are in Singapore Dollars (SGD).\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-83761ff1-1c0b-4143-b414-b3e38a99c215",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829276.274525
+        },
+        {
+          "invocation_id": "e-256ab25f-6053-4542-9bd9-a385bc52d96e",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What flights are available from Los Angeles to Melbourne for December 2025?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that. First, could you please specify the exact departure date in December 2025 and the number of adults traveling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829317.965537
+        },
+        {
+          "invocation_id": "e-df09fc2d-7b1b-4263-a841-b2afceffcdfd",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "one wasy, 25 dec, 8 adults, 5 kids, no preferences for anything"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to confirm, you're looking for a one-way flight from Los Angeles to Melbourne for 8 adults and 5 children, departing on December 25, 2025. Is that correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829328.193902
+        },
+        {
+          "invocation_id": "e-caad15d6-f2d7-4cc6-8300-d51bafc9e3b6",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm sorry, I'm unable to search for any flight results\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-d77cac2a-973e-4e9a-a848-4a75cdc5f6fb",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829333.483565
+        },
+        {
+          "invocation_id": "e-aba5d493-f4e3-4043-892f-1524ebc564c8",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Are there flights from Kuala Lumpur to Bali for next summer?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with that. First, could you please specify the exact departure date and the number of adults traveling?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829380.387856
+        },
+        {
+          "invocation_id": "e-20660788-74f1-4b4c-8e08-33456a804088",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "9 sept, one way trip, 4 adults, no child, no pref for all"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What year are you looking to travel?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829386.674754
+        },
+        {
+          "invocation_id": "e-705410cb-6650-4013-9cfb-c6663ad8b2cf",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "2025"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Just to make sure I have this right, you're looking for a one-way flight from Kuala Lumpur to Bali for 4 adults, departing on September 9, 2025. Does that sound right?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829394.463729
+        },
+        {
+          "invocation_id": "e-0e3f45f9-0274-4888-85d6-df4ba0d87ea4",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here are the flight offers for your search query:\n\n*   **Departure:** September 9, 2025\n*   **Origin:** Kuala Lumpur (KUL)\n*   **Destination:** Bali (DPS)\n*   **Passengers:** 4 adults\n\nWe found three flight offers for you. All flights are with Batik Air Malaysia (OD) and have a duration of approximately 3 hours. The price per person is around 79.50 SGD.\n\n*   **Flight 1:** Departs KUL at 14:00 and arrives in DPS at 17:00.\n*   **Flight 2:** Departs KUL at 16:30 and arrives in DPS at 19:40.\n*   **Flight 3:** Departs KUL at 17:50 and arrives in DPS at 21:00.\n\nPlease note that the currency is in Singapore Dollar (SGD)."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-db507518-d649-4537-95bc-2401a70f238f",
+                "args": {
+                  "agent_name": "flight_offers_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754829399.827407
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": "",
+          "year": ""
+        }
+      },
+      "creation_timestamp": 1754829457.8093302
+    }
+  ],
+  "creation_timestamp": 1754772559.5133026
+}

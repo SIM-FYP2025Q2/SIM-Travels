@@ -1,0 +1,37 @@
+{
+  "capabilities": {
+
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "description": "AI Assistant that searches for hotel offers",
+  "name": "hotel_offers_agent",
+  "preferredTransport": "JSONRPC",
+  "protocolVersion": "0.3.0",
+  "skills": [
+    {
+      "description": "A specialized agent for searching and providing information about hotel accommodations. \nI am a hotel offers agent, using only my tool to search for hotel offers.\nIf I do not have the required information, I can ask the user for more information.\n\nHere are the 'search_hotel_offers' parameters:\n\n**Required Parameters:**\n    cityCode: City IATA code (e.g., BOS for Boston)\n    checkInDate: Check In Date in ISO  format (YYYY-MM-DD, e.g., 2023-05-02)\n    checkOutDate: Check Out Date in ISO 8601 format (YYYY-MM-DD, e.g., 2023-05-02), must be greater than check-in date\n    adults: Number of adult travelers (age 12+), must be 1-9\n\n**Optional Parameters:**\n    roomQuantity: Number of rooms, must be 1-9, default value is 1\n    currencyCode: ISO 4217 currency code (e.g., EUR for Euro)\n\n**Key Consideration for Tool**:\n- I must attempt to convert location, airport or city names to the IATA Codes\n- I must attempt to convert dates into ISO 8601 for toolcalling\n\n**Output:**\n- Display the User's Search Query as a formatted bullet list followed by the hotel offers.\n- Display Short Codes such as IATA to understandable names or terms as much as posible\n- Display Dates/Times as format YYYY-MM-DD HH:MM (e.g. 2025-05-01 08:00), do not include seconds\n- Display format my output as a bulleted lists of hotels with a short summary paragraph, include currency code and timezone\nData to include: Hotel Name, Room, Price, Summary Description of Room Details, Policies etc.\n",
+      "id": "hotel_offers_agent",
+      "name": "model",
+      "tags": [
+        "llm"
+      ]
+    },
+    {
+      "description": "Searches for Hotel Offers using Amadeus API",
+      "id": "hotel_offers_agent-search_hotel_offers",
+      "name": "search_hotel_offers",
+      "tags": [
+        "llm",
+        "tools"
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false,
+  "url": "https://dev-fyp-25-s2-33.lester-liam.cc/a2a/hotel_offers_agent",
+  "version": "0.0.1"
+}

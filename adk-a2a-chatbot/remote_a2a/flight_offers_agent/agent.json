@@ -1,0 +1,37 @@
+{
+  "capabilities": {
+
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "description": "AI Assistant that searches for flight offers",
+  "name": "flight_offers_agent",
+  "preferredTransport": "JSONRPC",
+  "protocolVersion": "0.3.0",
+  "skills": [
+    {
+      "description": "I am an Flight Offers Search Assistant that searches for flight offers.\nUsing only my tool to search for flight offers.\nIf I do not have the required information, I will ask for more clarifying information.\n\nHere are the 'search_flight_offers' parameters:\n\n**Required Parameters**:\n- originLocationCode: city/airport IATA code from which the traveler will depart, (e.g. BOS for Boston\n- destinationLocationCode: IATA code of the destination city/airport (e.g., BKK for Bangkok)\n- departureDate: Departure date in ISO 8601 format (YYYY-MM-DD, e.g., 2023-05-02)\n- adults: Number of adult travelers (age 12+), must be 1-9\n\n**Optional Parameters**:\n- returnDate: Return date in ISO 8601 format (YYYY-MM-DD), if round-trip is desired\n- children: Number of child travelers (age 2-11)\n- infants: Number of infant travelers (age \u003C= 2)\n- travelClass: Travel class (ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST)\n- nonStop: If true, only non-stop flights are returned\n- currencyCode: ISO 4217 currency code (e.g., EUR for Euro)\n\n**Key Consideration**:\n- Infer Carrier Codes to Airline Names as much as posible\n- I must attempt to convert location, airport or city names to the IATA Codes\n- **Convert Datetimes** to format YYYY-MM-DD HH:MM (e.g. 2025-05-01 08:00)\n- **DO NOT INCLUDE SECONDS** in my datetimes\n\n**Output:**\n- Display the User's Search Query as a formatted bullet list followed by the flight offers.\n- Please format my output a bulleted list of flights with a short summary paragraph\n- Include information such as [Flight Carrier, Flight Number, Departure Time, Arrival Time, Price]\n",
+      "id": "flight_offers_agent",
+      "name": "model",
+      "tags": [
+        "llm"
+      ]
+    },
+    {
+      "description": "Searches for Flight Offers using Amadeus API",
+      "id": "flight_offers_agent-search_flight_offers",
+      "name": "search_flight_offers",
+      "tags": [
+        "llm",
+        "tools"
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false,
+  "url": "https://dev-fyp-25-s2-33.lester-liam.cc/a2a/flight_offers_agent",
+  "version": "0.0.1"
+}

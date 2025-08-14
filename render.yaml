@@ -1,0 +1,41 @@
+services:
+- type: web
+  name: csit321-fyp-25-s2-33-php-admin-panel
+  runtime: image
+  image:
+    url: docker.io/lesterliam/php-admin-panel:latest
+  plan: free
+  envVars:
+  - key: PINECONE_API_KEY
+    sync: false
+  - key: PINECONE_INDEX_HOST
+    sync: false
+  - key: DB_PASS_STAGING
+    sync: false
+  - key: DB_USER_STAGING
+    sync: false
+  - key: DB_NAME_STAGING
+    sync: false
+  - key: DB_PORT_STAGING
+    sync: false
+  - key: DB_HOST_STAGING
+    sync: false
+  - key: DB_PASS
+    sync: false
+  - key: DB_USER
+    sync: false
+  - key: DB_NAME
+    sync: false
+  - key: DB_PORT
+    sync: false
+  - key: DB_HOST
+    sync: false
+  - key: PROJECT_ID
+    sync: false
+  - key: SERVICE_ACCOUNT_CREDENTIALS
+    sync: false
+  - key: ENV
+    sync: false
+  region: singapore
+  autoDeployTrigger: commit
+version: "1"

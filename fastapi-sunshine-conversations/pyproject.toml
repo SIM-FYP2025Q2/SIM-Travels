@@ -1,0 +1,12 @@
+[project]
+name = "fast-api-endpoint"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi[standard]>=0.116.1",
+    "requests>=2.32.4",
+    "sunshine-conversations-client>=15.5.2",
+]

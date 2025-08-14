@@ -1,0 +1,745 @@
+{
+  "eval_set_id": "faq_booking_retrieval",
+  "name": "faq_booking_retrieval",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "case256037",
+      "conversation": [
+        {
+          "invocation_id": "e-530c1959-937d-4873-ac33-f12b6997ecee",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can you show me details of my upcoming flight bookings?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I can certainly help with that. First, could you please provide your 8-character Booking ID?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-daeb7b63-c5e1-4df3-9a48-e1c31ef4152b",
+                "args": {
+                  "agent_name": "booking_retriever_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789119.827953
+        },
+        {
+          "invocation_id": "e-eac581e8-f639-457a-b3ff-5448f3b80212",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "A5A0F42D"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Thank you. And could you please provide the last name associated with this booking?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789124.568128
+        },
+        {
+          "invocation_id": "e-b2d7278d-9a6e-40b3-9691-420ab4fcc044",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Becky Robinson"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I have your Booking ID as A5A0F42D and your last name as Robinson. Does that sound correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789128.506594
+        },
+        {
+          "invocation_id": "e-a5961f8e-82da-4cd6-9ce2-7fafd6b90452",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Here's a summary of your Airport Transfer booking:\n\n*   **Booking ID:** A5A0F42D\n*   **Last Name:** Robinson\n*   **Type:** Airport Transfer\n*   **Pickup Time:** 2025-01-02T19:35:59\n*   **Pickup Location:** 593 Weiss Vista Suite 592, Port Waynefort, NM 98542\n*   **Dropoff Location:** USNV Parks, FPO AA 99794\n\nSince this booking was completed on 2025-01-02, would you like customer support assistance?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-193d1d4e-953b-4837-b726-7040ef134aa9",
+                "args": {
+                  "booking_id": "A5A0F42D",
+                  "last_name": "Robinson"
+                },
+                "name": "get_booking"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789131.63296
+        },
+        {
+          "invocation_id": "e-2a7a1530-ddd9-4b6b-97ce-34b32ca440ac",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "No"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay. Is there anything else I can help you with today?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789141.178146
+        },
+        {
+          "invocation_id": "e-abfb3009-a5b6-4914-b9dc-55c836dcad44",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I would like to receive customer support for my booking"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "To speak with our customer representative via Live Chat, please type \"Human Agent\".\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789157.742395
+        },
+        {
+          "invocation_id": "e-bfa19af2-8648-4aee-80c7-acfe1edb2efd",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can I create a ticket instead"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I understand you'd like to create a support ticket regarding your airport transfer booking with ID A5A0F42D, as the booking was completed on 2025-01-02. I can help with that.\n\nTo make sure I have everything I need, could you please confirm your full name and email address?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-0bb10f28-7320-439a-9545-51bafbcc8845",
+                "args": {
+                  "agent_name": "zendesk_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "booking_retriever_agent",
+                [
+                  {
+                    "video_metadata": null,
+                    "thought": null,
+                    "inline_data": null,
+                    "file_data": null,
+                    "thought_signature": null,
+                    "code_execution_result": null,
+                    "executable_code": null,
+                    "function_call": null,
+                    "function_response": null,
+                    "text": "I can certainly help with that.\n"
+                  }
+                ]
+              ]
+            ]
+          },
+          "creation_timestamp": 1754789191.235426
+        },
+        {
+          "invocation_id": "e-a9044db2-3ee3-4877-96d2-bbbd4b917d44",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "John Doe, test@example.com"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "To make sure I have this right, I'll be creating a ticket for you with the following details:\n\n*   **Name:** John Doe\n*   **Email:** test@example.com\n*   **Subject:** Issue with Past Airport Transfer Booking\n*   **Description:** Customer John Doe is requesting support for airport transfer booking A5A0F42D, which was completed on 2025-01-02.\n\nDoes that look correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789205.552252
+        },
+        {
+          "invocation_id": "e-956d9e7e-110b-451b-90a2-c0ea160c5764",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Can you amend the subject to Feedback on Airport Transfer Booking"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "No problem. I've updated the subject line. The details for your ticket are now:\n\n*   **Name:** John Doe\n*   **Email:** test@example.com\n*   **Subject:** Feedback on Airport Transfer Booking\n*   **Description:** Customer John Doe is requesting support for airport transfer booking A5A0F42D, which was completed on 2025-01-02.\n\nDoes that look correct?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789228.92321
+        },
+        {
+          "invocation_id": "e-4b9b3fa4-f4d1-43f1-9cdd-089b0f1997f6",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Yes"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Great! I've created a support ticket for you.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-fdd8add8-11a6-426e-aa1c-bfdd5628b2bf",
+                "args": {
+                  "description": "Customer John Doe is requesting support for airport transfer booking A5A0F42D, which was completed on 2025-01-02.",
+                  "customer_email": "test@example.com",
+                  "customer_name": "John Doe",
+                  "priority": "normal",
+                  "title": "Feedback on Airport Transfer Booking"
+                },
+                "name": "zd_create_ticket"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789240.923854
+        },
+        {
+          "invocation_id": "e-e03070b8-8daf-4f49-aeb9-7f169b6cf044",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What is your customer support operating hours?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Our support team is available 24/7 via live chat and email. More information can be found here: https://example.com/contact\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-380f13b9-eb57-4bf9-9ec7-4622bc046065",
+                "args": {
+                  "agent_name": "faq_agent"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "id": "adk-8313da64-a492-40d5-b840-3efcbc7d56ed",
+                "args": {
+                  "user_query": "customer support operating hours"
+                },
+                "name": "rag_search"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789289.807668
+        },
+        {
+          "invocation_id": "e-80f272b9-04e6-4cdb-af32-ad84bded5a8d",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What payment methods are accepted?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "We accept credit/debit cards, PayPal, and selected e-wallets like GrabPay. You can find more information here: https://example.com/faq/billing-support\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-4dd273ed-f318-447c-9b10-f2ab13484131",
+                "args": {
+                  "user_query": "What payment methods are accepted?"
+                },
+                "name": "rag_search"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789306.916024
+        },
+        {
+          "invocation_id": "e-41b4ad84-2b30-439f-91a5-94eaac844107",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Do you have a bagge policy?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "For AirAsia, cabin baggage is limited to 7kg. Weight limit for one checked baggage is 32kg. Each passenger is entitled to purchase one checked baggage per booking, per flight. More information can be found here: https://www.airasia.com/aa/inflight-comforts/en/gb/baggage.html\n\nWhen you fly with Scoot, you automatically enjoy up to 10kg cabin baggage allowance - 3kg more than most low-cost carriers! Make sure that your cabin baggage does not exceed the permitted allowance before you get to the airport, or you will be advised to check in your baggage and may be subject to excess baggage fees. All Scoot and ScootPlus travelers are allowed up to two pieces of cabin baggage. Your carry-on luggage must fit within the dimensions of 54cm x 38cm x 23cm (total linear dimensions cannot exceed 115cm) to fit in the overhead compartment in the aircraft cabin and your personal item or bag must fit within the dimensions of 40cm x 30cm x 10cm to be stowed under the seat in front of you. More information can be found here: https://www.flyscoot.com/en/plan/booking-your-flight/baggage\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-7a100db9-2668-48aa-bc08-1f72d0d37254",
+                "args": {
+                  "user_query": "baggage policy"
+                },
+                "name": "rag_search"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789320.123807
+        },
+        {
+          "invocation_id": "e-438cc67c-42bb-4bb3-9801-9d33f3165e4c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Who is the owner of SIM Travels"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm sorry, I couldn't find an answer to your question in our knowledge base. Would you like me to open a support ticket for you with our customer service team? They will be able to assist you further.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-dfdfed33-799b-479e-8119-cab590ef457c",
+                "args": {
+                  "user_query": "Who is the owner of SIM Travels"
+                },
+                "name": "rag_search"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789336.938814
+        },
+        {
+          "invocation_id": "e-d9f9b315-2755-4f3a-a9de-af5c746bfeb8",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "No"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "OK.\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754789351.769511
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": ""
+        }
+      },
+      "creation_timestamp": 1754789359.7640297
+    }
+  ],
+  "creation_timestamp": 1754789173.4172635
+}

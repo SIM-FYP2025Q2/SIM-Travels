@@ -1,0 +1,220 @@
+{
+  "eval_set_id": "trip_planning_agent",
+  "name": "trip_planning_agent",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "casec42d99",
+      "conversation": [
+        {
+          "invocation_id": "e-cc4423b9-06d7-4df5-a79b-5c9eb779367c",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm planning a 2-week trip through Southeast Asia. I want to visit a major city, a historical site, and a unique natural wonder. I'm traveling in October and my budget is about $2,500 SGD per person, excluding flights. Please provide me an itinerary"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CoMTAVSoXO60qaarpTWxDb2wksgU_x0sh-d_hL4KKw-GZwu5XvJr_FRn5caTyD5IVYoYtrFObQodQYONf0SCInkfDdV8UgxAKMj9fHknw5Gn__MVJP8jdN6WgVjlKAtbEyECcjvM1y4jTZur0afmiefwAQPIHxcm1TgbvG6ailhu1VnsPTAMVzei_q-OrU_rHpL43g09_k0gt2ZFBNCzbhZlCWjRpDWXyE0LuT4kULsPKdBEEY_0OhT5fGgVfSIOPUdEy2B49ECV0VwH4zVJalAQR7c2xsJe8y-AqhRQL8YpAQ1So5siV9W1IiwM2-xp0mDKGyXPJcR3OhHmKqV2B2cqtmR203HFgTQs5Bucr-N0fSdueYsNCC_a0jqaFp18y-Oony1hTv0cK3mGHdMA4cSkxnuDEKgcqS7yxVUvf0L5TVQ1bAHL9SqGKL6uFnlnV2T2UIa-3VAhdK4JotJSrmutsNZn4j-eGG4ivL9cbtNU5DZN4wFm5bt5_-MlxmtJ20cCgFoMaPEvp2e7XRWsBsRSM0tuDBTa1LUYT9lnKBcQYBvTWE9GW_qdKL9x8A9rU3vieTr2cfj--ipMm1X_nO03t43Rjot-zVVN80vAHuBYc9bwerXpyMp0k5d-Rd717_o-1U1zNKIJGmsuWB0pn5BuogjLuGFe9K0filU1coxb_CnatyIZ8O7fypHYhpGRw0eHEquEIxcuX1kTo-G6mhJT2PDyL8JkPBOHxVnHh4jk_Njlbvdg8PxALWdkdraKkurqdifTyStBmFlyXdp0rR4jxewOLTGKi2E5vqxD6_8-z-WiXL6iGDY9GNRb0vVZ_erreu_ebpzlAJ7i5wh-HUw74bfWpZmDpQcyo1C1D9mjeXVQ7yVdIFueUuz9z05pZRxfTpIKK7fgvIugq6RUqXEO-9tNSsNkAKLhIblXIO9JA7CNelF1958G9EVrxOVo_vevc7I9jXD-hAEcgPhFMYzTyD7mFQyt4BI_WbKonmHFZzx8Lw52zNFdYtphMrxbT8PJGMht-hDZuPhwBorXWxPWA5LA79LKPPDu7ViUqARE-EDTagjlXd6VS7fDJwcJobU55WZQvpVYN347Wweo_iKO29J96UA7vt01DhsIJHoYnJnL0T-u7C87MK7reQsVQhClZdTGvhyAbKiP8tLONQBAVYhonzn0suCpwmO6JvbvElXoVgluphgtqnY9mu9xxktlbVgOjcvY5vBbTxEw6YH-66bzAGbP_vlNCQIAAf2VqL0-r2Ge2-WuyT187gbWiSP3LuUH93Sf-zxDgMQk91kM5BCg8zhY_psQBLxb8FuyIg4iEaCL6J_Ivw1oFiCF2ea7YM9GKA062Jo3qS-jRr3XBEbb7sRcbCmzNcR8h98BTfu6iFzOs4ZBcBVqqFoUP0Nzmoz3SHpbQGiITp8Mow77aVJLKQ25elS6QcANtHY26fxumKPolQj94NhnEz3ZLg3-n_LhfSq1-AR8WRUJ2Wes5g6t2xqxgTbEuitAqN94XqtHwG6ZdMKqIEHZKCkYTmfAuHDgD14pD4IpkoJDIKYlcXxGEUHbiIFSsGpNOGMRH36lhPt8mp0JIrHmgZuXBfr-xt_RZXAQnFDCswt44RP__kNXuCh9Is4zvfcHmOmi4-4xGhHVLj2fTemXEIvncjnkPcXqy3Lecw3sQqQsHb-4mOnlR8lgkecvZBoGz6dQ3QF5fj4dqVKfccK0pys3iVa8i0QGKFuPcod9f-NWNf_H9S6cqjVdLlgIsT318jb_TIlU8qJs_b4PgVkYuE_jNzBeAW60L2eZZZf1d-gEhHh2ZXA3GCI44IvK92VmUAlFVRpkqxjMnW71raei9QbwZiJHvRK5PZ0eqPr-LHK9KgzVEF0ImIANvPHRKWo6GLKMmubtQiTcxLMRTqpcDhIvqZHMNoo7WEjVwqXEpV2-NmLv7wvpPDD24j2nXr8pT2k1BUzIL1H4rFL7jG97-V1X6hPFrmIx74bMHTF_ImFtoLZj6-4bTgh3zUwfeUjxylVWKZn5Dvm10mU9U6P1NBzIOU82ZZOA0UVgDDY23GVzd-G5d6j7YX4ULVyXkSvdXrahjam1B9L9GxK8p62ifvehygRthzxMTqjppiPw4J5BlGGrGFVnXL_SdtLurfZoFw-367z_FsCZH0CKyxhHrSHQwt-4Z2ZeFbfWsP_u86ZjzecJQ4AQPtcOj3KYim9WO5ENQgjb9wh7QVUhLTerMEE4aMyDOc58eisod0bP2_H5xHd1UJSsvLB1lYojlX_rTAYlkCDShJQ8aOqos_-Wh6a3HPUwyjxhsDE5Ca-neNxzIarvpe_zzcvgfuTbm7VSvefQbUG_DAwbYBbAnvPDk8N_iSOWH-m1FK1llpdyWoYvaIS3jJNqJBi7DRD2h5QQNgm8u__k8MuLyRYU7UWsW7NS9UPpelzzLrunn_mSbjm4WHKxjj09YOtFGP5Hw_4f_JsMnZsa9-tKDh8-6jG_-DAlh-tfSiiR2VES5hkNXNbiaruvo4YdAlBMKHVdGcTzwbmVw2HzHzaIYgfhPbSahbeQYO-06rZ6RrWD3xAP8a2WS6d9a94wO6F6wRxe53cxlZ0UtaURMovNhFstPSulE03Tq_M9F_GdTHnYW-AH8aErDf7mTEvdrAX8rZ2HCVv4T1j5DaaeUjSAtkI8c7g566yfyQdpsNBDVVmdnp-PBxxuROx3ezsyGh-_RzfwKHdEZFqNsENLBYgDQgG3TgIGXu9RdX8Fj_7xmYE0hblorekqMRYjADQLSjlvdQnJBA6w9rFbE87ffbnIy30xnHcKRlwDY_lQ61_-b56-Yyc43U92Q1OzYGP4K19InX65kRThxPTDGMtTdVe_MXSl8MR6mlRJ-zb7KUGbM4yNqjxbYS-wEGNbDWkC3zoKW3UTkyo2EnmaTZPmOIT3tKjBCJsM2iDcmX8XoBqSdA_ped0YuidRzubouDlgCYVgp4nOekk5fZT9a06CxkgwN4JQAvXZNzBrwxL9ApdDU5ctNrAhGZsxmob3_Y2Wxcy1pLF9uDqNUO6QyI8dsz-icYdXohKPdTEh-P_XNgl0e6bNjGJK5LqVvYQ2yj54rsnswAV46EBE05GxSJpB7MEbdHsH0Bm-lWZ0E6YC0oAbhoD1Rl_3jovKTgZqxxjfiIPUbPjWnepxBf7a_9L_uS9aU1Nrq-VLBNhLnfT_Ri8k_7NCQhuY0wPnxJBLtm_4ea3ovvNgcCiy9eONwbw1tY0=",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "For a 2-week trip through Southeast Asia in October, I recommend focusing on Thailand, Cambodia, and Vietnam to experience a major city, a historical site, and a unique natural wonder.\n\n**Itinerary Suggestion:**\n\n*   **Bangkok, Thailand (4-5 days):** Start in this bustling major city, exploring ancient temples like Wat Arun and Wat Pho, vibrant street markets, and the Chao Phraya River. Mid-range hotels are widely available.\n*   **Siem Reap, Cambodia (4-5 days):** Travel to Siem Reap to immerse yourself in the historical grandeur of Angkor Wat and the surrounding temple complex, a UNESCO World Heritage site. Guesthouses and boutique hotels offer good value.\n*   **Hanoi & Ha Long Bay, Vietnam (4-5 days):** Conclude your trip in Hanoi, a major city with rich history and delicious street food. From Hanoi, take an overnight cruise to Ha Long Bay, a breathtaking natural wonder known for its limestone karsts. Accommodation in Hanoi ranges from budget-friendly to upscale, while Ha Long Bay cruises offer various comfort levels.\n\nThis itinerary balances cultural immersion, historical exploration, and natural beauty, fitting within your 2-week timeframe and budget for comfortable travel.\n\nI'm an AI assistant and I cannot make or amend bookings. For that, please visit our booking page at https://bookings.simtravels.com. However, I can help you search for offers."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-652eb672-c2b5-422d-9ce8-fad227de89c1",
+                "args": {
+                  "agent_name": "trip_planning_agent"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "id": "adk-c4acbb2d-d107-4ac7-a992-abd619b81c74",
+                "args": {
+                  "query": "popular Southeast Asia destinations with major city, historical site, and natural wonder for 2-week trip in October"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754787932.073113
+        },
+        {
+          "invocation_id": "e-327db64f-3eaf-4117-b7f2-05405c4bc451",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I will be travelling with my family of 2 adults and 2 children to Thailand, please provide some family-friendly activities and beaches"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Thailand offers a fantastic array of family-friendly activities and beautiful beaches perfect for a family of four!\n\n**Recommended Family-Friendly Activities:**\n\n*   **Beach Fun & Water Activities:** Thailand's beaches are known for shallow, calm waters, making them ideal for kids. You can enjoy building sandcastles, swimming, snorkeling to see tropical fish, kayaking, and even stand-up paddleboarding.\n*   **Elephant Sanctuaries:** Spend a day at an ethical elephant sanctuary (especially in Chiang Mai) where you can feed, play with, and bathe elephants in a responsible environment.\n*   **Cooking Classes:** Engage in a Thai cooking class where older children can help prepare authentic dishes with ingredients sourced from local markets.\n*   **Bustling Markets:** Explore the vibrant markets, including floating markets like Khlong Lat Mayom, or night markets like Srinakarin Train Night Market (better for older teens due to crowds), to experience local culture and try delicious street food.\n*   **Waterfalls & Hiking:** Discover stunning waterfalls like Erawan Waterfall, which often have natural pools for swimming. Many national parks offer family-friendly hiking trails.\n*   **Temple Visits:** Explore the remarkable *wats* (temples) in cities like Bangkok (Wat Arun, Wat Pho) or historical sites like Ayutthaya. Quick tours are available for younger children, while older teens might enjoy longer cultural explorations.\n\n**Recommended Family-Friendly Beaches:**\n\n*   **Nai Harn Beach (Phuket):** Known for its calm waters and suitability for young children.\n*   **Klong Dao Beach (Koh Lanta):** Features gentle, shallow waters and beach bars with toys and slides for kids.\n*   **East Coast, Koh Chang:** Serenity Resort on the East Coast offers an infinity pool, free kayaks, and beach toys, with calm waters.\n*   **Kamala Beach (Phuket):** A beautiful stretch of white sand with a laid-back vibe and shallow waters, close to family-friendly resorts.\n*   **Pak Weeb Beach (Khao Lak):** Offers child-friendly pools in its accommodations.\n\nMany resorts in these areas cater specifically to families, often with kids' clubs and dedicated pools.\n\nI'm an AI assistant and I cannot make or amend bookings. For that, please visit our booking page at https://bookings.simtravels.com. However, I can help you search for offers."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-591ef0b3-951f-467f-b7ce-e69f666c01b3",
+                "args": {
+                  "query": "family-friendly activities and beaches in Thailand for 2 adults and 2 children"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754787978.452649
+        },
+        {
+          "invocation_id": "e-4204c714-0059-4228-a808-5973f7ee5f0e",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "What should I do on my trip?"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": "CqIDAVSoXO75BTHgDb0Xve0aa5L1Yn9B_TPr3xsRuXOaHdmPTFIUL8T7aVvpb9vQWg7pFeNSMd47K-JHX6JoFuTW9SsU58Xwbof2m7eJj64_mE2oOm-j8NHvGy2srk9JCvCC6yltbhe--PHPv1jVlHPROBhILFL6sWbYFOGSo7CSw3RxMQfNK_IXNUkn2QVZn7hVZxSlv2r4SxXMZQ1lkvOEfcw6EWmVZq-FZy-TzcrN_GViI5OzhAYNnZ-rE4oTZ_wyq57IjcEBdSIpTA17xR8TSsXkrUHK6k3F4XIVO-rcPHzodVRgkKo2WCGmpULC9lSSSCY1TBAW4CQEqI64OE_Ig9KAzhqrDSUPQK6pWPF8K9p5bhEaGd61KkpXLhShQgTAKjF4bHyfyQwajrTS_nOIThL42i_JKAw3ye15tt4eDbOhSIyvR57NKw9b33sIk8gFV0KqzP876yTWngFzemYvg5lVPwjWyOeCYkrc3KiMeMU_AggjTWKMSQt9fyvmQtTMq8nSGUH73eJ7jAwBxZNTZhZFhnTtbTmfuNsW0YbSXewodA==",
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "To help me plan your perfect trip, could you please tell me:\n\n*   **Where are you planning to go?** (e.g., a specific city, country, or region)\n*   **What are your interests or what kind of experience are you looking for?** (e.g., beaches, adventure, historical sites, cultural experiences, food, relaxation, etc.)\n\nOnce I have this information, I can provide some tailored recommendations for you!"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754788105.688711
+        },
+        {
+          "invocation_id": "e-1cfb34f7-7690-4298-9eec-32014aa2e8dd",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "maybe japan? relaxation"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "For a relaxing trip to Japan, I highly recommend focusing on experiences that promote tranquility and well-being. Here are some top suggestions:\n\n*   **Onsen (Hot Spring) Resorts:** Japan is famous for its natural hot springs, known for their relaxing and therapeutic properties. Consider staying at a traditional ryokan (Japanese inn) with an onsen for a truly immersive and peaceful experience. Popular onsen destinations include Hakone, Beppu, Yufuin, and Ginzan Onsen. Many ryokans offer private onsen for couples or families.\n*   **Japanese Gardens:** Wander through the meticulously designed Japanese gardens found in many cities. These gardens are created for contemplation and offer a serene escape from urban bustle. Shinjuku Gyoen National Garden in Tokyo and Kenroku-en in Kanazawa are excellent choices.\n*   **Mindfulness and Meditation:** Explore opportunities for mindfulness and meditation, such as Zazen (seated meditation) sessions at Buddhist temples, particularly in Kyoto. Some temples offer day-long courses or even overnight retreats.\n*   **Forest Bathing (Shinrin-yoku):** Immerse yourself in nature with \"forest bathing,\" a practice of consciously spending time in woodlands to relax and improve well-being. Japan has numerous national parks and forests perfect for this.\n*   **Tea Ceremonies:** Participate in a traditional Japanese tea ceremony in Kyoto, a cultural experience that emphasizes harmony, respect, purity, and tranquility.\n*   **Quiet Coastal Areas:** While not the first thing that comes to mind for Japan, some coastal areas offer serene beach experiences, especially in Okinawa. You might even find unique relaxation options like volcanically-heated sand baths in Ibusuki, Kyushu.\n\nThese activities allow you to unwind and experience a different, more peaceful side of Japan."
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-7bf75f47-aead-47dd-8439-8b4c6dc56af7",
+                "args": {
+                  "query": "relaxation focused activities and places in Japan"
+                },
+                "name": "tavily_search_results_json"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754788122.102068
+        }
+      ],
+      "session_input": {
+        "app_name": "customer_support_agent",
+        "user_id": "user",
+        "state": {
+          "today": ""
+        }
+      },
+      "creation_timestamp": 1754788188.39537
+    }
+  ],
+  "creation_timestamp": 1754788185.5880187
+}

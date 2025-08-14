@@ -1,0 +1,37 @@
+{
+  "capabilities": {
+
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "description": "AI Assistant that searches for airport transfer offers",
+  "name": "transfer_offers_agent",
+  "preferredTransport": "JSONRPC",
+  "protocolVersion": "0.3.0",
+  "skills": [
+    {
+      "description": "A specialized agent for searching and providing information about airport transfer offers. \nI am a airport transfer offers agent, use only my tool to search for private transfer offers.\nIf I do not have the required information, I can ask the user for more information.\n\nHere are the 'search_airport_transfers' parameters:\n\n**Required Parameters:**\n    startAddress: The starting address for the transfer\n    endAddress: The ending address for the transfer\n    startDatetime: The start date and time for the transfer in ISO 8601 format (YYYY-MM-DDThh:mm:ss)\n    num_of_passengers: The number of passengers for the transfer, must be between 1 and 9\n    currency_code: ISO 4217 currency code (e.g., EUR for Euro)\n\n**Returns:**\n    A JSON string containing the transfer offers or an error message\n\n**Key Consideration for Tool**:\n- I must attempt to convert location, airport or city names to the IATA Codes\n- I must attempt to convert datetimes into ISO 8601 format (YYYY-MM-DDThh:mm:ss) for toolcalling\n\n**Output:**\n- Display the User's Search Query as a formatted bullet list followed by the airport transfer offers.\n- Display Short Codes such as IATA to understandable names or terms as much as posible\n- Display Dates/Times as format YYYY-MM-DD HH:MM (e.g. 2025-05-01 08:00), do not include seconds\n- Display format my output as a bulleted lists of transfer offers with a short summary paragraph, include currency code and timezone\nData to include: Quotation, Vehicles, Price, Policies and Important Information the user should be aware of\n",
+      "id": "transfer_offers_agent",
+      "name": "model",
+      "tags": [
+        "llm"
+      ]
+    },
+    {
+      "description": "Search for airport transfers using the Amadeus API",
+      "id": "transfer_offers_agent-search_airport_transfers",
+      "name": "search_airport_transfers",
+      "tags": [
+        "llm",
+        "tools"
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false,
+  "url": "https://dev-fyp-25-s2-33.lester-liam.cc/a2a/transfer_offers_agent",
+  "version": "0.0.1"
+}
