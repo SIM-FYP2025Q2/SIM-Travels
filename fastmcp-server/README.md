@@ -1,89 +1,37 @@
-# FastMCP 2.0 Server
+# FastMCP Amadeus Travel Assistant Server
 
-This document provides instructions on how to set up and run the FastMCP 2.0 server using either `uv` or `pip` for dependency management.
+This is a Python FastMCP server that provides a set of tools for searching flights, hotels, and airport transfers using the Amadeus API. It uses FastMCP to expose these tools as a web service.
 
-## Prerequisites
+## Environment Configuration
 
-- Python 3.11 or higher
-- `uv` (optional, for `uv` setup)
-- `pip` (included with Python)
+Before running the application, you need to create a `.env` file in the root of the project. You can copy the `.env.example` file to create it.
 
-## Setup with `uv`
+This file contains the following environment variables that need to be configured:
 
-1. **Create a virtual environment:**
+*   `API_KEY`: Your Amadeus API Key.
+*   `API_SECRET`: Your Amadeus API Secret.
+*   `GEOLOCATION_API_KEY`: Your Google Geocoding API Key.
 
+## Setup & Run the Application
+
+To run the application, you need to have Python 3.11+ and `uv` installed on your system. You can find installation instructions for `uv` [here](https://github.com/astral-sh/uv).
+
+1.  **Navigate to the project directory.**
     ```bash
-    uv venv
+    cd fastmcp-server
     ```
 
-2. **Activate the virtual environment:**
-    - On Windows:
-
-      ```bash
-      .venv\Scripts\activate
-      ```
-
-    - On macOS/Linux:
-
-      ```bash
-      source .venv/bin/activate
-      ```
-
-3. **Install dependencies:**
-
+2.  **Create the virtual environment and install dependencies:**
     ```bash
-    uv pip install -r requirements.txt
+    uv sync
+    ```
+    This command will create a virtual environment (if it doesn't exist) and install all the dependencies listed in `pyproject.toml`.
+
+3.  **Run the server:**
+    ```bash
+    uv run python server.py
     ```
 
-## Setup with `pip`
+4.  **Accessing the Application:**
 
-1. **Create a virtual environment:**
-
-    ```bash
-    python -m venv .venv
-    ```
-
-2. **Activate the virtual environment:**
-    - On Windows:
-
-      ```bash
-      .venv\Scripts\activate
-      ```
-
-    - On macOS/Linux:
-
-      ```bash
-      source .venv/bin/activate
-      ```
-
-3. **Install dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Environment Variables
-
-The server requires certain environment variables to be set.
-
-1. **Create a `.env` file** by copying the example file:
-
-    ```bash
-    cp .env.example .env
-    ```
-
-2. **Update the `.env` file** with your specific configuration details.
-
-## Running the Server
-
-Once the setup is complete and the environment variables are configured, you can run the server using `uv` or `python`.
-
-```bash
-uv run main.py
-```
-
-```python
-python main.py
-```
-
-The server will be accessible at `http://127.0.0.1:7000/mcp`.
+    Once the server is running, you can access the API at `http://localhost:7000`.

@@ -186,17 +186,17 @@ root_agent=Agent(
         * **Keywords:** `my booking`, `find my reservation`, `check status`, `booking number`, `itinerary`, `confirmation`.
 
     * `faq_agent`: Answers common questions about policies, business hours, and general information that is not specific to a single booking or offer.
-        * **Keywords:** `business hours`, `contact info`, `baggage policy`, `refunds`, `cancellation policy`, `check-in`, `check-out`, `what are your hours`, `policy`, `customer service`.
+        * **Keywords:** `business hours`, `contact info`, `baggage policy`, `refunds`, `cancellation policy`, `check-in`, `check-out`, `what are your hours`, `policy`
 
     * `zendesk_agent`: Handles escalation for unresolved issues and creates support tickets.
-        * **Keywords:** `support ticket`, `create ticket`, `help me`, `can't resolve`, `escalate`, `problem`, `issue`, `human agent` (if exact).
+        * **Keywords:** `customer support`, `customer service`, `support ticket`, `create ticket`, `help me`, `can't resolve`, `escalate`, `problem`, `issue`, `human agent` (if exact).
 
     ---
 
     **Escalation Protocol:** You must adhere strictly to the following escalation rules:
-
-    * **Human Agent Request:** If the user's exact message (case-insensitive) is "Human Agent," your only response must be: "To speak with our customer representative via Live Chat, please type 'Human Agent'."
-    * **Failed Resolution:** If you or a sub-agent are unable to resolve a user's query (e.g., a search fails), offer to create a support ticket by delegating to `zendesk_agent`.
+    * **Conditions for Human Agent Request:** Only offer the Human Agent message when the user rejects the Zendesk Ticketing and uses keywords such as "live chat", "I want to speak ...", "talk with someone" etc.
+    * **Human Agent Handover:** If the user's intent is to speak with a human, simply respond "To speak with our customer representative via Live Chat, please type 'Human Agent'."
+    * **Failed Resolution:** If you or a sub-agent are unable to resolve a user's query (e.g., a search fails, cannot help), offer to create a support ticket by delegating to `zendesk_agent`.
     """,
     sub_agents=[
         flight_query_agent,

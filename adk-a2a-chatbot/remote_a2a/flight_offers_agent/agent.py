@@ -52,6 +52,3 @@ root_agent=Agent(
     output_key='flight_offers',
     before_agent_callback=update_session_datetime_callback
 )
-
-# a2a_app = to_a2a(root_agent, port=8001)
-# uvicorn flight_offers_agent.agent:a2a_app --host localhost --port 8001

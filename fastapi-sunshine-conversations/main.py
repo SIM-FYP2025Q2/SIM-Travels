@@ -34,6 +34,15 @@ KEY_SECRET = os.environ.get("KEY_SECRET")
 url = "http://localhost:8080"
 appName = "apps/customer_support_agent"
 
+REPLY_ACTIONS = [
+    {"type":"reply", "text":"✈️ Flight Offers", "payload":"What flight offers are there?"},
+    {"type":"reply", "text":"🏨 Hotel Offers", "payload":"What hotel offers are there?"},
+    {"type":"reply", "text":"🚗 Transfer Offers", "payload":"What transfer offers are there?"},
+    {"type":"reply", "text":"🏖️ Trip Planning", "payload":"Plan me a trip"},
+    {"type":"reply", "text":"📄 My Bookings", "payload":"I want to retrieve my booking."},
+    {"type":"reply", "text":"❓ I have an issue.", "payload":"I have an issue."}
+]
+
 configuration = sunshine_conversations_client.Configuration(
     host = f"https://{ZENDESK_SUBDOMAIN}/sc"
 )
@@ -75,21 +84,22 @@ def extract_adk_response_text(data):
         The extracted text string, or None if no text could be found.
     """
     logging.error(f'Attempting to Extract Text from ADK Response: {data}')
-    # Check for standard ADK response (top-level is a list)
+    
+    # If Message is Type List, extract last event ['content'] for Response
     if isinstance(data, list) and data:
-        # Crucially, get the LAST event in the list, as that's where the final message lives.
+        
         last_event = data[-1]
         content = last_event.get('content')
 
         if isinstance(content, list):
-            # Handles multi-message history within a standard response
+            # Multiple Message Response
             last_message = content[-1]
             return last_message.get('parts', [{}])[0].get('text', None)
         elif content:
-            # Handles a single-message response
+            # Single Message Response
             return content.get('parts', [{}])[0].get('text', None)
 
-    # Fallback to check for a top-level A2A format
+    # If Response Format is A2A Message Type, Extract as A2A Response
     if data and isinstance(data, dict) and data.get('kind') == 'task' and isinstance(data.get('messages'), list):
         messages = data.get('messages')
         if messages:
@@ -97,7 +107,7 @@ def extract_adk_response_text(data):
             if isinstance(last_message.get('parts'), list) and last_message.get('parts'):
                 return last_message['parts'][0].get('text', None)
 
-    # Fallback if no text could be extracted from any known format
+    # Return None if Response Extraction Fail
     logging.error('Could not extract text from the ADK response.')
     return None
 
@@ -106,8 +116,15 @@ def greetUser(app_id, conversation_id) -> None:
     with sunshine_conversations_client.ApiClient(configuration) as api_client:
         api_instance = sunshine_conversations_client.MessagesApi(api_client)
         message_post = sunshine_conversations_client.MessagePost(
-                    author=sunshine_conversations_client.Author(type="business"),
-                    content=sunshine_conversations_client.Content(type="text", text=f"Hello! I'm SIM Travels AI Assistance. How can I help you?")
+                    author=sunshine_conversations_client.Author(
+                        type="business",
+                        avatar_url="https://2.gravatar.com/avatar/4db80f1d503fa685df4666148aa4d19001b2ada2495ffc5ccb68bbba927df965?size=256&d=initials"
+                    ),
+                    content=sunshine_conversations_client.Content(
+                        type="text",
+                        text=f"Hello! I'm SIM Travels AI Assistance. How can I help you?",
+                        actions=REPLY_ACTIONS
+                    )
         )
         api_response = api_instance.post_message(app_id, conversation_id, message_post)
 
@@ -122,7 +139,10 @@ def replyUser(app_id, conversation_id, message) -> None:
                 logging.info(f"POST Message: 'Transferring you to our human agent.'")
                 # Post Message
                 message_post = sunshine_conversations_client.MessagePost(
-                    author=sunshine_conversations_client.Author(type="business"),
+                    author=sunshine_conversations_client.Author(
+                        type="business",
+                        avatar_url="https://2.gravatar.com/avatar/4db80f1d503fa685df4666148aa4d19001b2ada2495ffc5ccb68bbba927df965?size=256&d=initials"
+                    ),
                     content=sunshine_conversations_client.Content(type="text", text=f"Transferring you to our human agent.")
                 )
                 api_response = api_instance.post_message(app_id, conversation_id, message_post)
@@ -130,7 +150,10 @@ def replyUser(app_id, conversation_id, message) -> None:
             except ApiException as e:
                 logging.error("Exception when calling MessagesApi->post_message: %s\n" % e)
                 message_post = sunshine_conversations_client.MessagePost(
-                    author=sunshine_conversations_client.Author(type="business"),
+                    author=sunshine_conversations_client.Author(
+                        type="business",
+                        avatar_url="https://2.gravatar.com/avatar/4db80f1d503fa685df4666148aa4d19001b2ada2495ffc5ccb68bbba927df965?size=256&d=initials"
+                    ),
                     content=sunshine_conversations_client.Content(type="text", text="I'm sorry, an unknown error ocurred. Please try reaching out later.")
                 )
                 api_response = api_instance.post_message(app_id, conversation_id, message_post)
@@ -150,14 +173,23 @@ def replyUser(app_id, conversation_id, message) -> None:
             logging.info(f"POST Message (Agent Response): {agentResponse}")
             # Post Message
             message_post = sunshine_conversations_client.MessagePost(
-                author=sunshine_conversations_client.Author(type="business"),
-                content=sunshine_conversations_client.Content(type="text", markdown_text=f"{agentResponse}")
+                author=sunshine_conversations_client.Author(
+                    type="business",
+                    avatar_url="https://2.gravatar.com/avatar/4db80f1d503fa685df4666148aa4d19001b2ada2495ffc5ccb68bbba927df965?size=256&d=initials"
+                ),
+                content=sunshine_conversations_client.Content(
+                    type="text",
+                    markdown_text=f"{agentResponse}",
+                    actions=REPLY_ACTIONS)
             )
             api_response = api_instance.post_message(app_id, conversation_id, message_post)
         except ApiException as e:
             logging.error("Exception when calling MessagesApi->post_message: %s\n" % e)
             message_post = sunshine_conversations_client.MessagePost(
-                author=sunshine_conversations_client.Author(type="business"),
+                author=sunshine_conversations_client.Author(
+                    type="business",
+                    avatar_url="https://2.gravatar.com/avatar/4db80f1d503fa685df4666148aa4d19001b2ada2495ffc5ccb68bbba927df965?size=256&d=initials"
+                ),
                 content=sunshine_conversations_client.Content(type="text", text="I'm sorry, an unknown error ocurred. Please try reaching out later.")
             )
             api_response = api_instance.post_message(app_id, conversation_id, message_post)

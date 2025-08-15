@@ -6,14 +6,13 @@ This is a PHP-based admin panel for managing a knowledge base system. It allows 
 The repository is organized as follows:
 ```
 admin-faq-panel/
-├── sql/            MySQL Database Loading Script
 ├── src/            Boundary, Controller and Entity Files
 ├── tests/          Test Scripts to Insert Tests Data / Test Functions (phpunit)
 ├── Dockerfile      Contains instructions for building the Docker image for the application
 ├── README.Docker.md This file
 ├── .dockerignore   Files and directories to exclude when building Docker images
 ├── compose.yaml    Defines application services for Docker Compose
-├── composer.json   Defines PHP Dependencies (phpunit)
+├── composer.json   Defines PHP Dependencies (phpunit, pinecone-php, google/auth)
 ```
 
 ## Environment Configuration

@@ -31,7 +31,7 @@ CREATE TABLE `FAQ` (
 
 -- Insert into Users table
 INSERT INTO `Users` (`username`, `email`, `password`, `is_admin`, `is_active`) VALUES
-('admin', 'admin@example.com', '$2y$10$ECb1z2WRMfBY0ZpyoXZhVe/B27LkXKiCgOcVwEQUEuiINZU3E4e0u', TRUE, TRUE),
+('admin', 'admin@example.com', '$2y$10$ECb1z2WRMfBY0ZpyoXZhVe/B27LkXKiCgOcVwEQUEuiINZU3E4e0u', TRUE, TRUE);
 
 -- Insert into Category table
 INSERT INTO `Category` (`category`) VALUES

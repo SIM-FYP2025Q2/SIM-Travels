@@ -1,7 +1,7 @@
 [project]
 name = "amadeus-fastmcp-server"
 version = "0.1.0"
-description = "MCP Toolsets for Amadeus Flight, Hotel and Airport Transfer Offers"
+description = "A Python FastMCP server that provides a set of tools for searching flights, hotels, and airport transfers using the Amadeus API."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -1,101 +1,59 @@
-# adk-chatbot
+# SIM Travels - Amadeus Travel Assistant
 
-This is a chatbot application built with the Google ADK.
+This is a Python-based travel assistant chatbot that provides a set of tools for searching flights, hotels, and airport transfers using the Amadeus API. It is built using the Google Agent Development Kit (ADK) and exposes its services through a chat interface.
 
-## Getting Started
+## Architecture
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+The application consists of two main components:
 
-### Prerequisites
+*   **Customer Support Agent (`customer_support_agent`):** This is the main, user-facing agent. It acts as a router, understanding the user's request and delegating it to the appropriate specialized sub-agent.
+*   **Remote A2A Agents (`remote_a2a`):** These are specialized, backend agents that handle specific tasks like searching for flight, hotel, or transfer offers. They are exposed as a web service using the ADK A2A server.
 
-* Python 3.11 or greater
-* `uv` or `pip` for package management
+## Environment Configuration
 
-### Setup (uv)
+Before running the application, you need to create a `.env` file in the root of the project. This file should contain the following environment variables:
 
-1. **Create a virtual environment:**
+*   `MCP_SERVER_URL`: The URL of the FastMCP server that connects to the Amadeus API.
+*   `PINECONE_API_KEY`: Your Pinecone API Key for the RAG search functionality.
+*   `PINECONE_INDEX_HOST`: Your Pinecone index host.
+*   `ZENDESK_API_URL`: The API URL for your Zendesk instance.
+*   `ZENDESK_EMAIL`: The email associated with your Zendesk account.
+*   `ZENDESK_API_KEY`: Your Zendesk API key.
+*   `MYSQL_USER`: The username for your MySQL database.
+*   `MYSQL_PASSWD`: The password for your MySQL database.
+*   `MYSQL_SERVER_URL`: The URL of your MySQL server.
+*   `TAVILY_API_KEY`: Your Tavily API key for search functionalities.
 
+## Setup & Run the Application
+
+To run the application, you need to have Python 3.11+ and `uv` installed on your system. You can find installation instructions for `uv` [here](https://github.com/astral-sh/uv).
+
+1.  **Navigate to the project directory.**
     ```bash
-    uv venv
+    cd adk-a2a-chatbot
     ```
 
-2. **Activate the virtual environment:**
-    * On Windows:
-
-        ```bash
-        .venv\Scripts\activate
-        ```
-
-    * On macOS/Linux:
-
-        ```bash
-        source .venv/bin/activate
-        ```
-
-3. **Install dependencies:**
-
+2.  **Create the virtual environment and install dependencies:**
     ```bash
-    uv pip install -r requirements.txt
+    uv sync
+    ```
+    This command will create a virtual environment (if it doesn't exist) and install all the dependencies listed in `pyproject.toml`.
+
+3.  **Run the Remote A2A Agents:**
+    Open a terminal and run the following command to start the server for the remote agents:
+    ```bash
+    uv run adk api_server --a2a --port 8001 remote_a2a
     ```
 
-### Setup (pip)
-
-1. **Create a virtual environment:**
-
+4.  **Run the Customer Support Agent:**
+    Open a second terminal and run the main application:
     ```bash
-    python -m venv .venv
+    uv run main.py
     ```
 
-2. **Activate the virtual environment:**
-    * On Windows:
+5.  **Accessing the Application:**
+    Once the application is running, you can interact with the chatbot through its interface. The host and port will be displayed in the console when you run `main.py`.
 
-        ```bash
-        .venv\Scripts\activate
-        ```
+## Acknowledgements
 
-    * On macOS/Linux:
-
-        ```bash
-        source .venv/bin/activate
-        ```
-
-3. **Install dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Configuration
-
-1. **Create a `.env` file** in the root directory by copying the `.env.example` file:
-
-    ```bash
-    cp .env.example .env
-    ```
-
-2. **Update the `.env` file** with your specific configurations, such as API keys and project IDs.
-
-3. **Repeat the process for each agent's `.env` file:**
-    * For `customer_support_agent`:
-
-        ```bash
-        cp customer_support_agent/.env.example customer_support_agent/.env
-        ```
-
-    * For `flight_offers_agent`:
-
-        ```bash
-        cp flight_offers_agent/.env.example flight_offers_agent/.env
-        ```
-
-    * Update these new `.env` files with the necessary credentials.
-
-## Running the Application
-
-Once the setup and configuration are complete, you can run the agent development with the following command:
-
-```bash
-./adk-chatbot > adk-web
-```
-
-This will start the FastAPI server, and you can access the chatbot at `http://localhost:8080`.
+Much of the tutorial and sample code was referred from the official ADK documentation: https://google.github.io/adk-docs/

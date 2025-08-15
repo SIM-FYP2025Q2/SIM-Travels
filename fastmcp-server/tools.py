@@ -9,13 +9,16 @@ logger = logging.getLogger(__name__)
 
 
 def truncate_address(address):
+    """
+    Truncates and returns an address string length of max. 80 chars
+    """
     if len(address) > 80:
-        # Find the last comma or space within the limit
+        # Find the last comma/space from 1st character to 80
         last_comma = address.rfind(',', 0, 80)
         if last_comma != -1:
             truncated = address[:last_comma]
         else:
-            # Fallback to simple slicing if no comma is found
+            # Otherwise, Truncate at Character Count 80
             truncated = address[:80]
 
         return truncated
@@ -80,7 +83,18 @@ def get_geocode(address) -> dict:
         logging.info("---- [end_get_geocode] ----")
         return {"status": "error", "results": f"Unable to retrieve address"}
 
+
 def reverse_search_postcode(lat, lng):
+    """
+    Reverse search a Geo Code (lat and lng) using the Google Geocoding API to retrieve the postcode
+
+    Required Parameters:
+        address: The address to geocode
+
+    Returns:
+        Postcode of the location, 'None' if failed
+    """
+
     logging.info("---- [reverse_search_postcode] ----")
     logging.info(f"Input: lat={lat}, lng={lng}")
     API_REQUEST = f'https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}&result_type=postal_code&key={os.getenv("GEOLOCATION_API_KEY")}'
@@ -109,6 +123,7 @@ def reverse_search_postcode(lat, lng):
         logging.info("---- [end_reverse_search_postcode] ----")
         return None
 
+
 def get_full_address(address, type_of_address) -> dict:
     """
     Get the full address details of a location using the Google Geocoding API
@@ -118,7 +133,7 @@ def get_full_address(address, type_of_address) -> dict:
         type_of_address: The type of address (start or end)
 
     Returns:
-        A dictionary containing the status and results of the geocoding request
+        A dictionary containing the status and the address details
     """
     logging.info("---- [get_full_address] ----")
     logging.info(f"Input address: {address}, type_of_address: {type_of_address}")

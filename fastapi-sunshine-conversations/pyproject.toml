@@ -1,7 +1,7 @@
 [project]
-name = "fast-api-endpoint"
+name = "fastapi-sunshine-conversations"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI Server that listens for Zendesk Webhook Events and passes them into our chatbot."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

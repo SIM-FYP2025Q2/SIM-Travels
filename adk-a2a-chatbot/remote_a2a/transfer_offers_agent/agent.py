@@ -29,6 +29,8 @@ def update_session_datetime_callback(callback_context: CallbackContext) -> Optio
     logging.info(f"[Callback] Current Session State: {current_state}")
 
     callback_context.state['today'] = dt.now().strftime("%A, %d %B %Y (%Y-%m-%d %H:%M:%S)")
+    callback_context.state['year'] = dt.now().strftime("%Y")
+    
     new_state = callback_context.state.to_dict()
 
     logging.info(f"[Callback] Updated Session DateTime State: {current_state} --> {new_state}")
@@ -50,6 +52,3 @@ root_agent=Agent(
     output_key='transfer_offers',
     before_agent_callback=update_session_datetime_callback
 )
-
-# a2a_app = to_a2a(root_agent, port=8001)
-# uvicorn hotel_offers.agent:a2a_app --host localhost --port 8002
