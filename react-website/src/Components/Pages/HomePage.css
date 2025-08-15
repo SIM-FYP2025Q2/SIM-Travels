@@ -1,0 +1,15 @@
+/*Homepage CSS File*/
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-image-top {
+  width: 400px;
+  height: 100px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the card area */
+}

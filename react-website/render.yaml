@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sim-travels-backend
+    env: node
+    plan: free
+    buildCommand: cd src/Backend && npm install
+    startCommand: node server.js
+    rootDir: src/Backend
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: DB_HOST
+        value: 
+      - key: DB_USER
+        value: 
+      - key: DB_PASSWORD
+        value: 
+      - key: DB_NAME
+        value: 

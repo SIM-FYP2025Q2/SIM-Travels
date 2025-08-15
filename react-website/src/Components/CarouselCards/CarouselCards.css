@@ -1,0 +1,16 @@
+/*CarouselCards CSS files*/
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.card-img-overlay h2,
+.card-img-overlay p {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.card-img {
+  width: 600px; /* Adjust width as needed */;
+  height: 600px; 
+  object-fit: cover; /* Ensures the image covers the card area */
+}
