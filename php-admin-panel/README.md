@@ -9,7 +9,7 @@ admin-faq-panel/
 ├── src/            Boundary, Controller and Entity Files
 ├── tests/          Test Scripts to Insert Tests Data / Test Functions (phpunit)
 ├── Dockerfile      Contains instructions for building the Docker image for the application
-├── README.Docker.md This file
+├── README.md This file
 ├── .dockerignore   Files and directories to exclude when building Docker images
 ├── compose.yaml    Defines application services for Docker Compose
 ├── composer.json   Defines PHP Dependencies (phpunit, pinecone-php, google/auth)
