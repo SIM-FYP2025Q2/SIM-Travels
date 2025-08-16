@@ -106,7 +106,7 @@ Documentations will be published here once completed & public access is allowed.
 
 > 🔗 View our [Taiga Project Board](https://tree.taiga.io/project/lesterl-sim2025q2-fyp-25-s2-33/timeline)
 
-> 📄 Documentations [Google Drive](https://drive.google.com/drive/folders/1RZiSEgSHBMAVtlkpjVISWFrFg38ln5eQ?usp=drive_link)
+> 📄 Documentations [Google Drive](https://drive.google.com/drive/folders/178JME2NU7hRcL9coJ_2rx1pJpNe-je6I?usp=sharing)
 
 ---
 
