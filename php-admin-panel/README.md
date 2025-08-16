@@ -37,6 +37,17 @@ This file contains the following environment variables that need to be configure
 *   `PINECONE_INDEX_HOST`: Your Pinecone index host.
 *   `PINECONE_API_KEY`: Your Pinecone API key.
 
+## Default Credentials
+
+You should setup a MySQL 8.0 server with `load_data.sql` from the root directory `./mysql_db` in the repository.
+
+The data includes a Admin account with the following default-credentials:
+
+> Email: admin@example.com
+
+> Password: admin
+
+
 ## Setup & Run the Application
 
 To run the application, you need to have Docker and Docker Compose installed on your system. You can find installation instructions for Docker [here](https://docs.docker.com/get-started/get-docker/).
