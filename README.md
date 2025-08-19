@@ -2,9 +2,32 @@
 Welcome to the official repository for the SIM Travels Chatbot Assistant! This project is designed to revolutionize the customer support experience by providing a versatile, intelligent, and easy-to-integrate chatbot solution through framework agnostic solutions such as Agent2Agent (A2A) Protocol and Model Context Protocol (MCP). Our demonstration focuses on the travel industry, but the core functionalities are designed to be universally applicable.
 
 ![SIM-Travels-Architecture.png](https://i.ibb.co/ZpM3WQCL/SIM-Travels-Architecture.png)
+![SIM-Travels-Zendesk.png](https://i.ibb.co/ymjfQ1QP/SIM-Travels-Zendesk.png)
 
-## ⭐ Demo Website
-**💬 Chat with our Chatbot:** https://sim-travels-deployment.onrender.com
+## ⭐ Demos
+**💬 Chat with our Chatbot:** [https://sim-travels-deployment.onrender.com](https://sim-travels-deployment.onrender.com)
+
+**💡 Administrative FAQ Panel:** [https://csit321-fyp-25-s2-33-php-admin-panel.onrender.com](https://csit321-fyp-25-s2-33-php-admin-panel.onrender.com)
+> (Admin) Email: admin@example.com, Password: admin
+> 
+> (Support Agent) Email: john.doe@example.com, Password: password123
+
+**📺 Demonstration Video:** [YouTube](https://youtu.be/ShuibtpFsFA?feature=shared&t=586)
+
+#### 💬 Sample Prompts
+
+* What are the available flights from Singapore to New York next week?
+* Find me a hotel in London that's within walking distance to the British Museum.
+* I want to travel from KLIA to Kingston Hotel Kuala Lumpur
+* Tell me about the train service from Don Mueang Airport to Bangkok's Central Station
+* What are some good places to visit in Thailand?
+* How do I check in for my flight online?
+* Can you retrieve my booking? My last name is Novak, Booking ID d2e8502e
+* Can you create a support ticket?
+
+---
+
+### API Endpoints/Deployments
 
 **A2A Protocol (Agent Card):**
 1. [Flight Offers Agent Card](https://a2a-agents-fyp-25-s2-33.lester-liam.cc/a2a/flight_offers_agent/.well-known/agent-card.json)
@@ -15,8 +38,27 @@ Welcome to the official repository for the SIM Travels Chatbot Assistant! This p
 1. [MCP Server](https://mcp-fyp-25-s2-33.lester-liam.cc/mcp)
 
 
-Refer to `sample_api_calls.ipynb` for more information on how to call our APIs.
+Refer to `sample_api_calls.ipynb` ([Google Colab](https://colab.research.google.com/github/SIM-FYP2025Q2/SIM-Travels/blob/main/sample_api_calls.ipynb)) for more information on how to call our APIs.
 
+---
+
+## 👥 Members
+
+* **Lester Liam**: Project Lead/Technical Leader
+* **Nicolas Ng**: Frontend Developer
+* **Nicholas Ting**: Frontend Developer
+* **Lucas**: Backend/AI Logic Developer
+* **Danish**:  Documentation
+
+## 📄 Project Documentation
+
+Documentations will be published here once completed & public access is allowed.
+
+> 🔗 View our [Taiga Project Board](https://tree.taiga.io/project/lesterl-sim2025q2-fyp-25-s2-33/timeline)
+
+> 📄 Documentations [Google Drive](https://drive.google.com/drive/folders/178JME2NU7hRcL9coJ_2rx1pJpNe-je6I?usp=sharing)
+
+---
 
 ## 🚀 Introduction
 In a world where 24/7 customer support is no longer a luxury but an expectation, businesses are increasingly turning to chatbots. However, many existing solutions fall short, offering rigid, rule-based interactions that frustrate users and fail to resolve complex issues.
@@ -83,30 +125,12 @@ The Universal Chatbot Assistant is an open-source project. We believe in the pow
 ### 💰 Revenue Model
 As an open-source project, there is no revenue model. We aim to create a valuable tool for the developer community.
 
-## 🚀 Getting Started
-
 ### Prerequisites
 - Node.js
 - npm
 - Python 3.11 or higher
 - Docker
 - uv 
-
-## 👥 Members
-
-* **Lester Liam**: Project Lead/Technical Leader
-* **Nicolas Ng**: Frontend Developer
-* **Nicholas Ting**: Frontend Developer
-* **Lucas**: Backend/AI Logic Developer
-* **Danish**:  Documentation
-
-## 📄 Project Documentation
-
-Documentations will be published here once completed & public access is allowed.
-
-> 🔗 View our [Taiga Project Board](https://tree.taiga.io/project/lesterl-sim2025q2-fyp-25-s2-33/timeline)
-
-> 📄 Documentations [Google Drive](https://drive.google.com/drive/folders/178JME2NU7hRcL9coJ_2rx1pJpNe-je6I?usp=sharing)
 
 ---
 
