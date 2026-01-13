@@ -1,4 +1,9 @@
 # SIM Travels - ADK/A2A/MCP Chatbot Assistant
+
+**Archived Project** <br/>
+**This Final Year Project is no longer under active development and has been archived.
+Please note that any demo or deployment links included in this repository are no longer available.**
+
 Welcome to the official repository for the SIM Travels Chatbot Assistant! This project is designed to revolutionize the customer support experience by providing a versatile, intelligent, and easy-to-integrate chatbot solution through framework agnostic solutions such as Agent2Agent (A2A) Protocol and Model Context Protocol (MCP). Our demonstration focuses on the travel industry, but the core functionalities are designed to be universally applicable.
 
 ![SIM-Travels-Architecture.png](https://i.ibb.co/ZpM3WQCL/SIM-Travels-Architecture.png)
